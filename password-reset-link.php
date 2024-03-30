@@ -47,13 +47,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) { // Check for form submission proper
     // Send email
     try {
         $mail->send();
-        echo "<script>alert('Message was sent successfully!'); document.location.href = 'vjLOgin.html';</script>";
+        echo "<script>alert('Message was sent successfully!'); document.location.href = 'index.html';</script>";
     } catch (Exception $e) {
         echo "<script>alert('Message could not be sent. Mailer Error: {$mail->ErrorInfo}');</script>";
     }
 } else {
     // Handle case when form is not submitted properly
-    echo "<script>alert('Form not submitted properly.'); document.location.href = 'vjLOgin.html';</script>";
+    echo "<script>alert('Form not submitted properly.'); document.location.href = 'index.html';</script>";
 }
 
 ?>
