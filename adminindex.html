@@ -13,6 +13,7 @@
 <!-- Form for adding a new user -->
 <form id="addForm">
     <input type="text" id="username" placeholder="Username" required>
+    <input type="text" id="name" placeholder="Name" required>
     <input type="email" id="email" placeholder="Email" required>
     <input type="password" id="password" placeholder="Password" required>
     <button type="submit">Add User</button>
@@ -26,7 +27,7 @@ $(document).ready(function(){
     // Function to fetch and display user data
     function fetchUserData() {
         $.ajax({
-            url: 'fetch_users.php',
+            url: 'php_files/fetch_users.php',
             type: 'GET',
             success: function(response) {
                 $('#userData').html(response);
@@ -41,17 +42,19 @@ $(document).ready(function(){
     $('#addForm').submit(function(e){
         e.preventDefault();
         var username = $('#username').val();
+        var name = $('#name').val();
         var email = $('#email').val();
         var password = $('#password').val();
         $.ajax({
-            url: 'add_user.php',
+            url: 'php_files/add_user.php',
             type: 'POST',
-            data: {username: username, email: email, password: password},
+            data: {username: username, name: name, email: email, password: password},
             success: function(response) {
                 // Refresh user data after adding a new user
                 fetchUserData();
                 // Clear form fields
                 $('#username').val('');
+                $('#name').val('');
                 $('#email').val('');
                 $('#password').val('');
             }
@@ -66,7 +69,7 @@ $(document).ready(function(){
         console.log($(this)[0].id )
         var id = exampleVar1.replace(/^delete_/, "");
         $.ajax({
-            url: 'delete_user.php',
+            url: 'php_files/delete_user.php',
             type: 'POST',
             data: {id: id},
             success: function(response) {
