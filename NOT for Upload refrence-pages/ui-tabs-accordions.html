@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foo Tables | Nifty - Admin Template</title>
+    <title>Tabs &amp; Accordions | Nifty - Admin Template</title>
 
 
     <!--STYLESHEET-->
@@ -31,10 +31,6 @@
 
 
         
-    <!--FooTable [ OPTIONAL ]-->
-    <link href="plugins/fooTable/css/footable.core.css" rel="stylesheet">
-
-
 
 
 
@@ -69,14 +65,6 @@
     <script src="js/demo/nifty-demo.min.js"></script>
 
     
-    <!--FooTable [ OPTIONAL ]-->
-    <script src="plugins/fooTable/dist/footable.all.min.js"></script>
-
-
-    <!--FooTable Example [ SAMPLE ]-->
-    <script src="js/demo/tables-footable.js"></script>
-
-
 
 
     
@@ -524,7 +512,7 @@
 
                                 <!-- Dropdown footer -->
                                 <div class="pad-all text-right">
-                                    <a href="NOT for Upload refrence-pages/pages-login.html" class="btn btn-primary">
+                                    <a href="pages-login.html" class="btn btn-primary">
                                         <i class="demo-pli-unlock"></i> Logout
                                     </a>
                                 </div>
@@ -557,7 +545,7 @@
                 <!--Page Title-->
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <div id="page-title">
-                    <h1 class="page-header text-overflow">Foo Tables</h1>
+                    <h1 class="page-header text-overflow">Tabs &amp; Accordions</h1>
 
                     <!--Searchbox-->
                     <div class="searchbox">
@@ -572,880 +560,679 @@
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <!--End page title-->
 
+
+                <!--Breadcrumb-->
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">UI</a></li>
+					<li class="active">Tabs &amp; Accordions</li>
+                </ol>
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <!--End breadcrumb-->
+
+
+        
+
                 <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
                     
+					<div class="row">
+					    <div class="col-lg-6">
+					
+					        <!--Default Tabs (Left Aligned)-->
+					        <!--===================================================-->
+					        <div class="tab-base">
+					
+					            <!--Nav Tabs-->
+					            <ul class="nav nav-tabs">
+					                <li class="active">
+					                    <a data-toggle="tab" href="#demo-lft-tab-1">Home <span class="badge badge-purple">27</span></a>
+					                </li>
+					                <li>
+					                    <a data-toggle="tab" href="#demo-lft-tab-2">Profile</a>
+					                </li>
+					                <li>
+					                    <a data-toggle="tab" href="#demo-lft-tab-3">Setting</a>
+					                </li>
+					            </ul>
+					
+					            <!--Tabs Content-->
+					            <div class="tab-content">
+					                <div id="demo-lft-tab-1" class="tab-pane fade active in">
+					                    <p class="text-main text-semibold">First Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					                <div id="demo-lft-tab-2" class="tab-pane fade">
+					                    <p class="text-main text-semibold">Second Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					                <div id="demo-lft-tab-3" class="tab-pane fade">
+					                    <p class="text-main text-semibold">Third Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Default Tabs (Left Aligned)-->
+					
+					
+					        <!--Icon Tabs (Left Aligned)-->
+					        <!--===================================================-->
+					        <div class="tab-base">
+					
+					            <!--Nav tabs-->
+					            <ul class="nav nav-tabs">
+					                <li class="active"><a data-toggle="tab" href="#demo-ico-lft-tab-1"><i class="demo-psi-home"></i></a></li>
+					                <li><a data-toggle="tab" href="#demo-ico-lft-tab-2"><i class="demo-psi-heart-2"></i></a></li>
+					                <li><a data-toggle="tab" href="#demo-ico-lft-tab-3"><i class="demo-psi-gear"></i></a></li>
+					            </ul>
+					
+					
+					            <!--Tabs Content-->
+					            <div class="tab-content">
+					                <div id="demo-ico-lft-tab-1" class="tab-pane fade active in">
+					                    <p class="text-main text-semibold">First Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					                <div id="demo-ico-lft-tab-2" class="tab-pane fade">
+					                    <p class="text-main text-semibold">Second Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					                <div id="demo-ico-lft-tab-3" class="tab-pane fade">
+					                    <p class="text-main text-semibold">Third Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Icon Tabs (Left Aligned)-->
+					
+					
+					        <!--Panel with Tabs-->
+					        <!--===================================================-->
+					        <div class="panel">
+					
+					            <!--Panel heading-->
+					            <div class="panel-heading">
+					                <div class="panel-control">
+					                    <ul class="nav nav-tabs">
+					                        <li class="active"><a href="#demo-tabs-box-1" data-toggle="tab">First Tab</a></li>
+					                        <li><a href="#demo-tabs-box-2" data-toggle="tab">Second Tab</a></li>
+					                    </ul>
+					                </div>
+					                <h3 class="panel-title">Panel With tabs</h3>
+					            </div>
+					
+					            <!--Panel body-->
+					            <div class="panel-body">
+					                <div class="tab-content">
+					                    <div class="tab-pane fade in active" id="demo-tabs-box-1">
+					                        <p class="text-main text-semibold">First Tab Content</p>
+					                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                    </div>
+					                    <div class="tab-pane fade" id="demo-tabs-box-2">
+					                        <p class="text-main text-semibold">Second Tab Content</p>
+					                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                    </div>
+					                </div>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Panel with Tabs-->
+					
+					
+					        <!--Stacked Tabs Left-->
+					        <!--===================================================-->
+					        <div class="tab-base tab-stacked-left">
+					
+					            <!--Nav tabs-->
+					            <ul class="nav nav-tabs">
+					                <li class="active">
+					                    <a data-toggle="tab" href="#demo-stk-lft-tab-1">Home</a>
+					                </li>
+					                <li>
+					                    <a data-toggle="tab" href="#demo-stk-lft-tab-2">Profile</a>
+					                </li>
+					                <li>
+					                    <a data-toggle="tab" href="#demo-stk-lft-tab-3">Setting</a>
+					                </li>
+					            </ul>
+					
+					            <!--Tabs Content-->
+					            <div class="tab-content">
+					                <div id="demo-stk-lft-tab-1" class="tab-pane fade active in">
+					                    <p class="text-main text-semibold">First Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					                <div id="demo-stk-lft-tab-2" class="tab-pane fade">
+					                    <p class="text-main text-semibold">Second Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					                <div id="demo-stk-lft-tab-3" class="tab-pane fade">
+					                    <p class="text-main text-semibold">Third Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+					                </div>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Stacked Tabs Left-->
+					
+					    </div>
+					    <div class="col-lg-6">
+					
+					        <!--Default Tabs (Right Aligned)-->
+					        <!--===================================================-->
+					        <div class="tab-base">
+					
+					            <!--Nav tabs-->
+					            <ul class="nav nav-tabs tabs-right">
+					                <li class="active">
+					                    <a data-toggle="tab" href="#demo-rgt-tab-1">Home</a>
+					                </li>
+					                <li>
+					                    <a data-toggle="tab" href="#demo-rgt-tab-2">Profile <span class="badge badge-success">23</span></a>
+					                </li>
+					                <li>
+					                    <a data-toggle="tab" href="#demo-rgt-tab-3">Setting</a>
+					                </li>
+					            </ul>
+					
+					            <!--Tabs Content-->
+					            <div class="tab-content">
+					                <div id="demo-rgt-tab-1" class="tab-pane fade active in">
+					                    <p class="text-main text-semibold">First Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					                <div id="demo-rgt-tab-2" class="tab-pane fade">
+					                    <p class="text-main text-semibold">Second Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					                <div id="demo-rgt-tab-3" class="tab-pane fade">
+					                    <p class="text-main text-semibold">Third Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Default Tabs (Right Aligned)-->
+					
+					
+					        <!--Icon Tabs (Right Aligned)-->
+					        <!--===================================================-->
+					        <div class="tab-base">
+					
+					            <!--Nav tabs-->
+					            <ul class="nav nav-tabs tabs-right">
+					                <li class="active">
+					                    <a data-toggle="tab" href="#demo-ico-rgt-tab-1"><i class="demo-psi-home"></i></a>
+					                </li>
+					                <li>
+					                    <a data-toggle="tab" href="#demo-ico-rgt-tab-2"><i class="demo-psi-heart-2"></i></a>
+					                </li>
+					                <li>
+					                    <a data-toggle="tab" href="#demo-ico-rgt-tab-3"><i class="demo-psi-gear"></i></a>
+					                </li>
+					            </ul>
+					
+					            <!--Tabs Content-->
+					            <div class="tab-content">
+					                <div id="demo-ico-rgt-tab-1" class="tab-pane fade active in">
+					                    <p class="text-main text-semibold">First Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					                <div id="demo-ico-rgt-tab-2" class="tab-pane fade">
+					                    <p class="text-main text-semibold">Second Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					                <div id="demo-ico-rgt-tab-3" class="tab-pane fade">
+					                    <p class="text-main text-semibold">Third Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Icon tabs (Right Aligned)-->
+					
+					
+					        <!--Panel with Icon Tabs-->
+					        <!--===================================================-->
+					        <div class="panel">
+					            <!--Panel heading-->
+					            <div class="panel-heading">
+					                <div class="panel-control">
+					                    <ul class="nav nav-tabs">
+					                        <li class="active">
+					                            <a href="#demo-tabs2-box-1" data-toggle="tab">
+					                                <i class="demo-psi-idea-2"></i>
+					                            </a>
+					                        </li>
+					                        <li>
+					                            <a href="#demo-tabs2-box-2" data-toggle="tab">
+					                                <i class="demo-psi-pen-5"></i>
+					                            </a>
+					                        </li>
+					                    </ul>
+					                </div>
+					                <h3 class="panel-title">Panel With tabs</h3>
+					            </div>
+					
+					            <!--Panel Body-->
+					            <div class="panel-body">
+					                <div class="tab-content">
+					                    <div class="tab-pane fade in active" id="demo-tabs2-box-1">
+					                        <p class="text-main text-semibold">First Tab Content</p>
+					                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                    </div>
+					                    <div class="tab-pane fade" id="demo-tabs2-box-2">
+					                        <p class="text-main text-semibold">Second Tab Content</p>
+					                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                    </div>
+					                </div>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Panel with Icon Tabs-->
+					
+					
+					        <!--Stacked Tabs Right-->
+					        <!--===================================================-->
+					        <div class="tab-base tab-stacked-right">
+					
+					            <!--Tabs Content-->
+					            <div class="tab-content">
+					                <div id="demo-stk-rgt-tab-1" class="tab-pane fade active in">
+					                    <p class="text-main text-semibold">First Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					
+					                <div id="demo-stk-rgt-tab-2" class="tab-pane fade">
+					                    <p class="text-main text-semibold">Second Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					                </div>
+					
+					                <div id="demo-stk-rgt-tab-3" class="tab-pane fade">
+					                    <p class="text-main text-semibold">Third Tab Content</p>
+					                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+					                </div>
+					            </div>
+					
+					            <!--Nav Tabs-->
+					            <ul class="nav nav-tabs">
+					                <li class="active">
+					                    <a data-toggle="tab" href="#demo-stk-rgt-tab-1">Home</a>
+					                </li>
+					                <li>
+					                    <a data-toggle="tab" href="#demo-stk-rgt-tab-2">Profile</a>
+					                </li>
+					                <li>
+					                    <a data-toggle="tab" href="#demo-stk-rgt-tab-3">Setting</a>
+					                </li>
+					            </ul>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Stacked Tabs Right-->
+					
+					    </div>
+					</div>
+					
+					<br>
+					<h4 class="text-main pad-btm bord-btm">Accordions</h4>
+					<div class="row">
+					    <div class="col-md-6 col-lg-4">
+					
+					        <!--Default Accordion-->
+					        <!--===================================================-->
+					        <div class="panel-group accordion" id="accordion">
+					            <div class="panel">
+					
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#accordion" data-toggle="collapse" href="#collapseOne">Collapsible Group Item #1</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse in" id="collapseOne">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="panel">
+					
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">Collapsible Group Item #2</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse" id="collapseTwo">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="panel">
+					
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#accordion" data-toggle="collapse" href="#collapseThree">Collapsible Group Item #3</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse" id="collapseThree">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Default Accordion-->
+					
+					    </div>
+					    <div class="col-md-6 col-lg-4">
+					
+					        <!--Bordered Accordion-->
+					        <!--===================================================-->
+					        <div class="panel-group accordion" id="demo-acc-info-outline">
+					            <div class="panel panel-bordered panel-info">
+					
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-info-outline" data-toggle="collapse" href="#demo-acd-info-outline-1">Collapsible Group Item #1</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse in" id="demo-acd-info-outline-1">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="panel panel-bordered panel-info">
+					
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-info-outline" data-toggle="collapse" href="#demo-acd-info-outline-2">Collapsible Group Item #2</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse" id="demo-acd-info-outline-2">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="panel panel-bordered panel-info">
+					
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-info-outline" data-toggle="collapse" href="#demo-acd-info-outline-3">Collapsible Group Item #3</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse" id="demo-acd-info-outline-3">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Bordered Accordion-->
+					
+					    </div>
+					    <div class="col-md-12 col-lg-4">
+					
+					        <!--Info Accordion-->
+					        <!--===================================================-->
+					        <div class="panel-group accordion" id="demo-acc-info">
+					            <div class="panel panel-info panel-colorful">
+					
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-info" data-toggle="collapse" href="#demo-acd-info-1">Collapsible Group Item #1</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse in" id="demo-acd-info-1">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="panel panel-info panel-colorful">
+					
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-info" data-toggle="collapse" href="#demo-acd-info-2">Collapsible Group Item #2</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse" id="demo-acd-info-2">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="panel panel-info panel-colorful">
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-info" data-toggle="collapse" href="#demo-acd-info-3">Collapsible Group Item #3</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse" id="demo-acd-info-3">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Info Accordion -->
+					
+					    </div>
+					</div>
+					
+					
 					
 					<div class="row">
-					    <div class="col-sm-6">
-					        <div class="panel">
-					            <div class="panel-heading">
-					                <h3 class="panel-title">Row Toggler</h3>
-					            </div>
+					    <div class="col-md-6 col-lg-4">
 					
-					            <!-- Foo Table - Row Toggler -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <table id="demo-foo-row-toggler" class="table toggle-circle">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Row Toggler -->
+					        <!--Purple Accordion-->
+					        <!--===================================================-->
+					        <div class="panel-group accordion" id="demo-acc-purple">
+					            <div class="panel panel-purple">
 					
-					        </div>
-					        <div class="panel">
-					            <div class="panel-heading">
-					                <h3 class="panel-title">Accordion</h3>
-					            </div>
-					
-					            <!-- Foo Table - Accordion -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <table id="demo-foo-accordion" class="table toggle-arrow-tiny">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Accordion -->
-					
-					        </div>
-					    </div>
-					    <div class="col-sm-6">
-					        <div class="panel">
-					            <div class="panel-heading">
-					                <h3 class="panel-title">Expand / Collapse All Rows</h3>
-					            </div>
-					
-					            <!-- Foo Table - Expand / Collapse All Rows -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <div class="pad-btm">
-					                    <button id="demo-foo-collapse" class="btn btn-info">Collapse All</button>
-					                    <button id="demo-foo-expand" class="btn btn-warning">Expand All</button>
+					                <!-- Accordion title -->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-purple" data-toggle="collapse" href="#demo-acd-purple-1">Collapsible Group Item #1</a>
+					                    </h4>
 					                </div>
-					                <table id="demo-foo-col-exp" class="table toggle-circle">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Expand / Collapse All Rows -->
 					
-					        </div>
-					        <div class="panel">
-					            <div class="panel-heading">
-					                <h3 class="panel-title">Pagination</h3>
-					            </div>
-					
-					            <!-- Foo Table - Pagination -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <label class="form-inline">Show
-					                    <select id="demo-show-entries" class="form-control input-sm">
-					                        <option value="5">5</option>
-					                        <option value="10">10</option>
-					                        <option value="15">15</option>
-					                        <option value="20">20</option>
-					                    </select>
-					                    entries
-					                </label>
-					                <table id="demo-foo-pagination" class="table toggle-arrow-tiny" data-page-size="5">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                    <tfoot>
-					                        <tr>
-					                            <td colspan="5">
-					                                <div class="text-right">
-					                                    <ul class="pagination"></ul>
-					                                </div>
-					                            </td>
-					                        </tr>
-					                    </tfoot>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Pagination -->
-					
-					        </div>
-					    </div>
-					</div>
-					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Filtering</h3>
-					    </div>
-					
-					    <!-- Foo Table - Filtering -->
-					    <!--===================================================-->
-					    <div class="panel-body">
-					        <table id="demo-foo-filtering" class="table table-bordered table-hover toggle-circle" data-page-size="7">
-					            <thead>
-					                <tr>
-					                    <th data-toggle="true">First Name</th>
-					                    <th>Last Name</th>
-					                    <th data-hide="phone, tablet">Job Title</th>
-					                    <th data-hide="phone, tablet">DOB</th>
-					                    <th data-hide="phone, tablet">Status</th>
-					                </tr>
-					            </thead>
-					            <div class="pad-btm form-inline">
-					                <div class="row">
-					                    <div class="col-sm-6 text-xs-center">
-					                        <div class="form-group">
-					                            <label class="control-label">Status</label>
-					                            <select id="demo-foo-filter-status" class="form-control">
-					                                <option value="">Show all</option>
-					                                <option value="active">Active</option>
-					                                <option value="disabled">Disabled</option>
-					                                <option value="suspended">Suspended</option>
-					                            </select>
-					                        </div>
-					                    </div>
-					                    <div class="col-sm-6 text-xs-center text-right">
-					                        <div class="form-group">
-					                            <input id="demo-foo-search" type="text" placeholder="Search" class="form-control" autocomplete="off">
-					                        </div>
+					                <!-- Accordion content -->
+					                <div class="panel-collapse collapse in" id="demo-acd-purple-1">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
 					                    </div>
 					                </div>
 					            </div>
-					            <tbody>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					            </tbody>
-					            <tfoot>
-					                <tr>
-					                    <td colspan="5">
-					                        <div class="text-right">
-					                            <ul class="pagination"></ul>
-					                        </div>
-					                    </td>
-					                </tr>
-					            </tfoot>
-					        </table>
-					    </div>
-					    <!--===================================================-->
-					    <!-- End Foo Table - Filtering -->
+					            <div class="panel panel-purple">
 					
-					</div>
-					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Add &amp; Remove Rows</h3>
-					    </div>
+					                <!-- Accordion title -->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-purple" data-toggle="collapse" href="#demo-acd-purple-2">Collapsible Group Item #2</a>
+					                    </h4>
+					                </div>
 					
-					    <!-- Foo Table - Add & Remove Rows -->
-					    <!--===================================================-->
-					    <div class="panel-body">
-					        <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle" data-page-size="7">
-					            <thead>
-					                <tr>
-					                    <th data-sort-ignore="true" class="min-width"></th>
-					                    <th data-sort-initial="true" data-toggle="true">First Name</th>
-					                    <th>Last Name</th>
-					                    <th data-hide="phone, tablet">Job Title</th>
-					                    <th data-hide="phone, tablet">DOB</th>
-					                    <th data-hide="phone, tablet">Status</th>
-					                </tr>
-					            </thead>
-					            <div class="pad-btm form-inline">
-					                <div class="row">
-					                    <div class="col-sm-6 text-xs-center">
-					                        <div class="form-group">
-					                            <button id="demo-btn-addrow" class="btn btn-purple"><i class="demo-pli-plus"></i> Add New Row</button>
-					                        </div>
-					                    </div>
-					                    <div class="col-sm-6 text-xs-center text-right">
-					                        <div class="form-group">
-					                            <input id="demo-input-search2" type="text" placeholder="Search" class="form-control" autocomplete="off">
-					                        </div>
+					                <!-- Accordion content -->
+					                <div class="panel-collapse collapse" id="demo-acd-purple-2">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
 					                    </div>
 					                </div>
 					            </div>
-					            <tbody>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					            </tbody>
-					            <tfoot>
-					                <tr>
-					                    <td colspan="6">
-					                        <div class="text-right">
-					                            <ul class="pagination"></ul>
-					                        </div>
-					                    </td>
-					                </tr>
-					            </tfoot>
-					        </table>
-					    </div>
-					    <!--===================================================-->
-					    <!-- End Foo Table - Add & Remove Rows -->
+					            <div class="panel panel-purple">
 					
+					                <!-- Accordion title -->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-purple" data-toggle="collapse" href="#demo-acd-purple-3">Collapsible Group Item #3</a>
+					                    </h4>
+					                </div>
+					
+					                <!-- Accordion content -->
+					                <div class="panel-collapse collapse" id="demo-acd-purple-3">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Purple Accordion-->
+					
+					    </div>
+					    <div class="col-md-6 col-lg-4">
+					
+					        <!--Pink Accordion-->
+					        <!--===================================================-->
+					        <div class="panel-group accordion" id="demo-acc-pink">
+					            <div class="panel panel-pink panel-colorful">
+					
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-pink" data-toggle="collapse" href="#demo-acd-pink-1">Collapsible Group Item #1</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse in" id="demo-acd-pink-1">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="panel panel-pink panel-colorful">
+					
+					                <!-- Accordion title -->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-pink" data-toggle="collapse" href="#demo-acd-pink-2">Collapsible Group Item #2</a>
+					                    </h4>
+					                </div>
+					
+					                <!-- Accordion content -->
+					                <div class="panel-collapse collapse" id="demo-acd-pink-2">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="panel panel-pink panel-colorful">
+					
+					                <!-- Accordion title -->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-pink" data-toggle="collapse" href="#demo-acd-pink-3">Collapsible Group Item #3</a>
+					                    </h4>
+					                </div>
+					
+					                <!-- Accordion content -->
+					                <div class="panel-collapse collapse" id="demo-acd-pink-3">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!--End Pink Accordion-->
+					
+					    </div>
+					    <div class="col-md-12 col-lg-4">
+					
+					        <!--Colorful Accordion-->
+					        <!--===================================================-->
+					        <div class="panel-group accordion" id="demo-acc-mix">
+					            <div class="panel panel-success panel-colorful">
+					
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-mix" data-toggle="collapse" href="#demo-acd-mix-1">Collapsible Group Item #1</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse in" id="demo-acd-mix-1">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="panel panel-warning panel-colorful">
+					
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-mix" data-toggle="collapse" href="#demo-acd-mix-2">Collapsible Group Item #2</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse" id="demo-acd-mix-2">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="panel panel-danger panel-colorful">
+					
+					                <!--Accordion title-->
+					                <div class="panel-heading">
+					                    <h4 class="panel-title">
+					                        <a data-parent="#demo-acc-mix" data-toggle="collapse" href="#demo-acd-mix-3">Collapsible Group Item #3</a>
+					                    </h4>
+					                </div>
+					
+					                <!--Accordion content-->
+					                <div class="panel-collapse collapse" id="demo-acd-mix-3">
+					                    <div class="panel-body">
+					                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable VHS.
+					                    </div>
+					                </div>
+					            </div>
+					        </div>
+					
+					        <!--===================================================-->
+					        <!--End Colorful Accordion-->
+					
+					    </div>
 					</div>
 					
 					
@@ -1859,7 +1646,7 @@
 						
 						            <!--Menu list item-->
 						            <li>
-						                <a href="NOT for Upload refrence-pages\widgets.html">
+						                <a href="widgets.html">
 						                    <i class="demo-psi-gear-2"></i>
 						                    <span class="menu-title">
 												<strong>Widgets</strong>
@@ -1874,7 +1661,7 @@
 						            <li class="list-header">Components</li>
 						
 						            <!--Menu list item-->
-						            <li>
+						            <li class="active-sub">
 						                <a href="#">
 						                    <i class="demo-psi-boot-2"></i>
 						                    <span class="menu-title">UI Elements</span>
@@ -1882,15 +1669,15 @@
 						                </a>
 						
 						                <!--Submenu-->
-						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages\ui-buttons.html">Buttons</a></li>
+						                <ul class="collapse in">
+						                    <li><a href="ui-buttons.html">Buttons</a></li>
 											<li><a href="ui-panels.html">Panels</a></li>
-											<li><a href="NOT for Upload refrence-pages\ui-modals.html">Modals</a></li>
+											<li><a href="ui-modals.html">Modals</a></li>
 											<li><a href="ui-progress-bars.html">Progress bars</a></li>
 											<li><a href="ui-components.html">Components</a></li>
 											<li><a href="ui-typography.html">Typography</a></li>
 											<li><a href="ui-list-group.html">List Group</a></li>
-											<li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
+											<li class="active-link"><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
 											<li><a href="ui-alerts-tooltips.html">Alerts &amp; Tooltips</a></li>
 											
 						                </ul>
@@ -1906,19 +1693,19 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages\forms-general.html">General</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-components.html">Advanced Components</a></li>
+						                    <li><a href="forms-general.html">General</a></li>
+											<li><a href="forms-components.html">Advanced Components</a></li>
 											<li><a href="forms-validation.html">Validation</a></li>
 											<li><a href="forms-wizard.html">Wizard</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-file-upload.html">File Upload</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-text-editor.html">Text Editor</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-markdown.html">Markdown</a></li>
+											<li><a href="forms-file-upload.html">File Upload</a></li>
+											<li><a href="forms-text-editor.html">Text Editor</a></li>
+											<li><a href="forms-markdown.html">Markdown</a></li>
 											
 						                </ul>
 						            </li>
 						
 						            <!--Menu list item-->
-						            <li class="active-sub">
+						            <li>
 						                <a href="#">
 						                    <i class="demo-psi-receipt-4"></i>
 						                    <span class="menu-title">Tables</span>
@@ -1926,18 +1713,18 @@
 						                </a>
 						
 						                <!--Submenu-->
-						                <ul class="collapse in">
+						                <ul class="collapse">
 						                    <li><a href="tables-static.html">Static Tables</a></li>
 											<li><a href="tables-bootstrap.html">Bootstrap Tables</a></li>
 											<li><a href="tables-datatable.html">Data Tables</a></li>
-											<li class="active-link"><a href="tables-footable.html">Foo Tables</a></li>
+											<li><a href="tables-footable.html">Foo Tables</a></li>
 											
 						                </ul>
 						            </li>
 						
 						            <!--Menu list item-->
 						            <li>
-						                <a href="NOT for Upload refrence-pages\charts.html">
+						                <a href="charts.html">
 						                    <i class="demo-psi-bar-chart"></i>
 						                    <span class="menu-title">Charts</span>
 						                </a>
@@ -1993,18 +1780,18 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages/pages-blank.html">Blank Page</a></li>
-											<li><a href="profile-page.html">Profile</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-search-results.html">Search Results</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-faq.html">FAQ</a></li>
+						                    <li><a href="pages-blank.html">Blank Page</a></li>
+											<li><a href="pages-profile.html">Profile</a></li>
+											<li><a href="pages-search-results.html">Search Results</a></li>
+											<li><a href="pages-faq.html">FAQ</a></li>
 											<li class="list-divider"></li>
-											<li><a href="NOT for Upload refrence-pages/pages-404.html">404 Error</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-500.html">500 Error</a></li>
+											<li><a href="pages-404.html">404 Error</a></li>
+											<li><a href="pages-500.html">500 Error</a></li>
 											<li class="list-divider"></li>
-											<li><a href="NOT for Upload refrence-pages/pages-login.html">Login</a></li>
-											<li><a href="user-register.html">Register</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-password-reminder.html">Password Reminder</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-lock-screen.html">Lock Screen</a></li>
+											<li><a href="pages-login.html">Login</a></li>
+											<li><a href="pages-register.html">Register</a></li>
+											<li><a href="pages-password-reminder.html">Password Reminder</a></li>
+											<li><a href="pages-lock-screen.html">Lock Screen</a></li>
 											
 						                </ul>
 						            </li>
@@ -2640,4 +2427,3 @@
 
 </body>
 </html>
-

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foo Tables | Nifty - Admin Template</title>
+    <title>Helper Classes | Nifty - Admin Template</title>
 
 
     <!--STYLESHEET-->
@@ -31,8 +31,20 @@
 
 
         
-    <!--FooTable [ OPTIONAL ]-->
-    <link href="plugins/fooTable/css/footable.core.css" rel="stylesheet">
+    <!--Font Awesome [ OPTIONAL ]-->
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!--Switchery [ OPTIONAL ]-->
+    <link href="plugins/switchery/switchery.min.css" rel="stylesheet">
+
+
+    <!--Bootstrap Select [ OPTIONAL ]-->
+    <link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+
+
+    <!--Demo [ DEMONSTRATION ]-->
+    <link href="css/demo/nifty-demo.min.css" rel="stylesheet">
 
 
 
@@ -69,12 +81,16 @@
     <script src="js/demo/nifty-demo.min.js"></script>
 
     
-    <!--FooTable [ OPTIONAL ]-->
-    <script src="plugins/fooTable/dist/footable.all.min.js"></script>
+    <!--Switchery [ OPTIONAL ]-->
+    <script src="plugins/switchery/switchery.min.js"></script>
 
 
-    <!--FooTable Example [ SAMPLE ]-->
-    <script src="js/demo/tables-footable.js"></script>
+    <!--Bootstrap Select [ OPTIONAL ]-->
+    <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+
+
+    <!--Demo script [ DEMONSTRATION ]-->
+    <script src="js/demo/nifty-demo.min.js"></script>
 
 
 
@@ -524,7 +540,7 @@
 
                                 <!-- Dropdown footer -->
                                 <div class="pad-all text-right">
-                                    <a href="NOT for Upload refrence-pages/pages-login.html" class="btn btn-primary">
+                                    <a href="pages-login.html" class="btn btn-primary">
                                         <i class="demo-pli-unlock"></i> Logout
                                     </a>
                                 </div>
@@ -557,7 +573,7 @@
                 <!--Page Title-->
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <div id="page-title">
-                    <h1 class="page-header text-overflow">Foo Tables</h1>
+                    <h1 class="page-header text-overflow">Helper Classes</h1>
 
                     <!--Searchbox-->
                     <div class="searchbox">
@@ -572,880 +588,967 @@
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <!--End page title-->
 
+
+                <!--Breadcrumb-->
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li class="active">Helper Classes</li>
+                </ol>
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <!--End breadcrumb-->
+
+
+        
+
                 <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
                     
 					
 					<div class="row">
-					    <div class="col-sm-6">
+					    <div class="col-lg-6">
+					
+					
+					        <!-- PADDING CLASSES -->
+					        <!--===================================================-->
 					        <div class="panel">
 					            <div class="panel-heading">
-					                <h3 class="panel-title">Row Toggler</h3>
+					                <h3 class="panel-title">Paddings</h3>
 					            </div>
-					
-					            <!-- Foo Table - Row Toggler -->
-					            <!--===================================================-->
 					            <div class="panel-body">
-					                <table id="demo-foo-row-toggler" class="table toggle-circle">
+					                <table class="table demo-nifty-w-table">
 					                    <thead>
 					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
+					                            <th>Class Name</th>
+					                            <th>Live Preview</th>
+					                            <th>Description</th>
 					                        </tr>
 					                    </thead>
-					                    <tbody>
+					                    <tbody class="demo-nifty-padding">
 					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Row Toggler -->
-					
-					        </div>
-					        <div class="panel">
-					            <div class="panel-heading">
-					                <h3 class="panel-title">Accordion</h3>
-					            </div>
-					
-					            <!-- Foo Table - Accordion -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <table id="demo-foo-accordion" class="table toggle-arrow-tiny">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Accordion -->
-					
-					        </div>
-					    </div>
-					    <div class="col-sm-6">
-					        <div class="panel">
-					            <div class="panel-heading">
-					                <h3 class="panel-title">Expand / Collapse All Rows</h3>
-					            </div>
-					
-					            <!-- Foo Table - Expand / Collapse All Rows -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <div class="pad-btm">
-					                    <button id="demo-foo-collapse" class="btn btn-info">Collapse All</button>
-					                    <button id="demo-foo-expand" class="btn btn-warning">Expand All</button>
-					                </div>
-					                <table id="demo-foo-col-exp" class="table toggle-circle">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Expand / Collapse All Rows -->
-					
-					        </div>
-					        <div class="panel">
-					            <div class="panel-heading">
-					                <h3 class="panel-title">Pagination</h3>
-					            </div>
-					
-					            <!-- Foo Table - Pagination -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <label class="form-inline">Show
-					                    <select id="demo-show-entries" class="form-control input-sm">
-					                        <option value="5">5</option>
-					                        <option value="10">10</option>
-					                        <option value="15">15</option>
-					                        <option value="20">20</option>
-					                    </select>
-					                    entries
-					                </label>
-					                <table id="demo-foo-pagination" class="table toggle-arrow-tiny" data-page-size="5">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                    <tfoot>
-					                        <tr>
-					                            <td colspan="5">
-					                                <div class="text-right">
-					                                    <ul class="pagination"></ul>
+					                            <td>.pad-all</td>
+					                            <td>
+					                                <div class="pad-all">
+					                                    <div>BOX</div>
 					                                </div>
 					                            </td>
+					                            <td>Add paddings.</td>
 					                        </tr>
-					                    </tfoot>
+					                        <tr>
+					                            <td>.pad-no</td>
+					                            <td>
+					                                <div class="pad-no">
+					                                    <div>BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Remove paddings.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.pad-lft</td>
+					                            <td>
+					                                <div class="pad-lft">
+					                                    <div>BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add left padding.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.pad-rgt</td>
+					                            <td>
+					                                <div class="pad-rgt">
+					                                    <div>BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add right padding.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.pad-top</td>
+					                            <td>
+					                                <div class="pad-top">
+					                                    <div>BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add top padding.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.pad-btm</td>
+					                            <td>
+					                                <div class="pad-btm">
+					                                    <div>BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add bottom padding.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.pad-hor</td>
+					                            <td>
+					                                <div class="pad-hor">
+					                                    <div>BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add horizontal paddings.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.pad-ver</td>
+					                            <td>
+					                                <div class="pad-ver">
+					                                    <div>BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add vertical paddings.</td>
+					                        </tr>
+					                    </tbody>
 					                </table>
 					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Pagination -->
-					
 					        </div>
+					        <!--===================================================-->
+					        <!--END PADDING CLASSES-->
+					
+					    </div>
+					    <div class="col-lg-6">
+					
+					        <!-- MARGIN CLASSES -->
+					        <!--===================================================-->
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Margins</h3>
+					            </div>
+					             <div class="panel-body">
+					                <table class="table demo-nifty-w-table">
+					                    <thead>
+					                        <tr>
+					                            <th>Class Name</th>
+					                            <th>Live Preview</th>
+					                            <th>Description</th>
+					                        </tr>
+					                    </thead>
+					                    <tbody class="demo-nifty-margin">
+					                        <tr>
+					                            <td>.mar-all</td>
+					                            <td>
+					                                <div>
+					                                    <div class="mar-all">BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add margins.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.mar-no</td>
+					                            <td>
+					                                <div>
+					                                    <div class="mar-no">BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Remove margins.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.mar-lft</td>
+					                            <td>
+					                                <div>
+					                                    <div class="mar-lft">BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add left margin.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.mar-rgt</td>
+					                            <td>
+					                                <div>
+					                                    <div class="mar-rgt">BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add right margin.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.mar-top</td>
+					                            <td>
+					                                <div>
+					                                    <div class="mar-top">BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add top margin.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.mar-btm</td>
+					                            <td>
+					                                <div>
+					                                    <div class="mar-btm">BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add bottom margin.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.mar-hor</td>
+					                            <td>
+					                                <div>
+					                                    <div class="mar-hor">BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add horizontal margins.</td>
+					                        </tr>
+					                        <tr>
+					                            <td>.mar-ver</td>
+					                            <td>
+					                                <div>
+					                                    <div class="mar-ver">BOX</div>
+					                                </div>
+					                            </td>
+					                            <td>Add vertical margins.</td>
+					                        </tr>
+					                    </tbody>
+					                </table>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!-- END MARGIN CLASSES -->
+					
 					    </div>
 					</div>
-					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Filtering</h3>
-					    </div>
+					<div class="row">
+					    <div class="col-lg-6">
 					
-					    <!-- Foo Table - Filtering -->
-					    <!--===================================================-->
-					    <div class="panel-body">
-					        <table id="demo-foo-filtering" class="table table-bordered table-hover toggle-circle" data-page-size="7">
-					            <thead>
-					                <tr>
-					                    <th data-toggle="true">First Name</th>
-					                    <th>Last Name</th>
-					                    <th data-hide="phone, tablet">Job Title</th>
-					                    <th data-hide="phone, tablet">DOB</th>
-					                    <th data-hide="phone, tablet">Status</th>
-					                </tr>
-					            </thead>
-					            <div class="pad-btm form-inline">
-					                <div class="row">
-					                    <div class="col-sm-6 text-xs-center">
-					                        <div class="form-group">
-					                            <label class="control-label">Status</label>
-					                            <select id="demo-foo-filter-status" class="form-control">
-					                                <option value="">Show all</option>
-					                                <option value="active">Active</option>
-					                                <option value="disabled">Disabled</option>
-					                                <option value="suspended">Suspended</option>
-					                            </select>
-					                        </div>
-					                    </div>
-					                    <div class="col-sm-6 text-xs-center text-right">
-					                        <div class="form-group">
-					                            <input id="demo-foo-search" type="text" placeholder="Search" class="form-control" autocomplete="off">
-					                        </div>
-					                    </div>
-					                </div>
+					        <!-- BORDER CLASSES -->
+					        <!--===================================================-->
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Borders</h3>
 					            </div>
-					            <tbody>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					            </tbody>
-					            <tfoot>
-					                <tr>
-					                    <td colspan="5">
-					                        <div class="text-right">
-					                            <ul class="pagination"></ul>
-					                        </div>
-					                    </td>
-					                </tr>
-					            </tfoot>
-					        </table>
-					    </div>
-					    <!--===================================================-->
-					    <!-- End Foo Table - Filtering -->
+					             <div class="panel-body">
+					                <table class="table demo-nifty-w-table">
+					                <thead>
+					                    <tr>
+					                        <th>Class Name</th>
+					                        <th>Live Preview</th>
+					                        <th>Description</th>
+					                    </tr>
+					                </thead>
+					                <tbody class="demo-nifty-border">
+					                    <tr>
+					                        <td>.bord-all</td>
+					                        <td>
+					                            <div class="bord-all">BOX</div>
+					                        </td>
+					                        <td>Add borders.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bord-no</td>
+					                        <td>
+					                            <div class="bord-no">BOX</div>
+					                        </td>
+					                        <td>Remove all borders.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bord-top</td>
+					                        <td>
+					                            <div class="bord-top">BOX</div>
+					                        </td>
+					                        <td>Add top border.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bord-btm</td>
+					                        <td>
+					                            <div class="bord-btm">BOX</div>
+					                        </td>
+					                        <td>Add bottom border.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bord-lft</td>
+					                        <td>
+					                            <div class="bord-lft">BOX</div>
+					                        </td>
+					                        <td>Add left border.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bord-rgt</td>
+					                        <td>
+					                            <div class="bord-rgt">BOX</div>
+					                        </td>
+					                        <td>Add right border.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bord-hor</td>
+					                        <td>
+					                            <div class="bord-hor">BOX</div>
+					                        </td>
+					                        <td>Add horizontal borders.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bord-ver</td>
+					                        <td>
+					                            <div class="bord-ver">BOX</div>
+					                        </td>
+					                        <td>Add vertical borders.</td>
+					                    </tr>
+					                </tbody>
+					            </table>
+					            </div>
+					        </div>
 					
+					        <!--===================================================-->
+					        <!-- END OF BORDER CLASSES -->
+					
+					
+					        <!-- TEXT CLASSES -->
+					        <!--===================================================-->
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Text</h3>
+					            </div>
+					             <div class="panel-body">
+					                <table class="table demo-nifty-w-table">
+					                <thead>
+					                    <tr>
+					                        <th>Class Name</th>
+					                        <th>Live Preview</th>
+					                        <th>Description</th>
+					                    </tr>
+					                </thead>
+					                <tbody class="demo-nifty-text">
+					                    <tr>
+					                        <td>.text-thin</td>
+					                        <td>
+					                            <p class="text-thin">Sample Text</p>
+					                        </td>
+					                        <td>Thin font.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-normal</td>
+					                        <td>
+					                            <p class="text-normal">Sample Text</p>
+					                        </td>
+					                        <td>Normal font.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-semibold</td>
+					                        <td>
+					                            <p class="text-semibold">Sample Text</p>
+					                        </td>
+					                        <td>Semibold font.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-bold</td>
+					                        <td>
+					                            <p class="text-bold">Sample Text</p>
+					                        </td>
+					                        <td>Bold font.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-xs</td>
+					                        <td>
+					                            <p class="text-xs">Text</p>
+					                        </td>
+					                        <td>Extra small text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-sm</td>
+					                        <td>
+					                            <p class="text-xs">Text</p>
+					                        </td>
+					                        <td>Small text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-2x</td>
+					                        <td>
+					                            <p class="text-2x">Text</p>
+					                        </td>
+					                        <td>Big text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-3x</td>
+					                        <td>
+					                            <p class="text-3x">Text</p>
+					                        </td>
+					                        <td>Large text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-4x</td>
+					                        <td>
+					                            <p class="text-4x">Text</p>
+					                        </td>
+					                        <td>Extra large text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-5x</td>
+					                        <td>
+					                            <p class="text-5x">Text</p>
+					                        </td>
+					                        <td>Super large text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.unselectable</td>
+					                        <td>
+					                            <p class="unselectable">Sample Text</p>
+					                        </td>
+					                        <td>Unselectable text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-overflow</td>
+					                        <td>
+					                            <p class="text-overflow">This is a really really long text</p>
+					                        </td>
+					                        <td>Text overflow.</td>
+					                    </tr>
+					                </tbody>
+					            </table>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!-- END TEXT CLASSES -->
+					
+					    </div>
+					    <div class="col-lg-6">
+					
+					        <!-- ICON CLASSES -->
+					        <!--===================================================-->
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Icon Wrap</h3>
+					            </div>
+					            <div class="panel-body">
+					                <table class="table demo-nifty-w-table">
+					                <thead>
+					                    <tr>
+					                        <th>Class Name</th>
+					                        <th>Live Preview</th>
+					                        <th>Description</th>
+					                    </tr>
+					                </thead>
+					                <tbody class="demo-nifty-icon">
+					                    <tr>
+					                        <td>.icon-wrap</td>
+					                        <td><span class="icon-wrap"><i class="fa fa-paint-brush"></i></span></td>
+					                        <td>Wrap icon.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.icon-circle</td>
+					                        <td><span class="icon-wrap icon-circle"><i class="fa fa-paint-brush"></i></span></td>
+					                        <td>Circle icon.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.icon-wrap-xs</td>
+					                        <td><span class="icon-wrap icon-wrap-xs"><i class="fa fa-paint-brush"></i></span></td>
+					                        <td>Extra small wrap icon.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.icon-wrap-sm</td>
+					                        <td><span class="icon-wrap icon-wrap-sm"><i class="fa fa-paint-brush"></i></span></td>
+					                        <td>Small wrap icon.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.icon-wrap-md</td>
+					                        <td><span class="icon-wrap icon-wrap-md"><i class="fa fa-paint-brush"></i></span></td>
+					                        <td>Medium wrap icon.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.icon-wrap-lg</td>
+					                        <td><span class="icon-wrap icon-wrap-lg"><i class="fa fa-paint-brush"></i></span></td>
+					                        <td>Large wrap icon.</td>
+					                    </tr>
+					                </tbody>
+					            </table>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!-- END ICON CLASSES -->
+					
+					
+					        <!-- IMAGE CLASSES -->
+					        <!--===================================================-->
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Images</h3>
+					            </div>
+					             <div class="panel-body">
+					                <table class="table demo-nifty-w-table">
+					                <thead>
+					                    <tr>
+					                        <th>Class Name</th>
+					                        <th>Live Preview</th>
+					                        <th>Description</th>
+					                    </tr>
+					                </thead>
+					                <tbody>
+					                    <tr>
+					                        <td>.img-circle</td>
+					                        <td><img class="img-md img-circle" src="img/profile-photos/1.png" alt="Sample Image"></td>
+					                        <td>Circle image.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.img-xs</td>
+					                        <td><img class="img-xs" src="img/profile-photos/1.png" alt="Sample Image"></td>
+					                        <td>Extra small image.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.img-sm</td>
+					                        <td><img class="img-sm" src="img/profile-photos/1.png" alt="Sample Image"></td>
+					                        <td>Small size image.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.img-md</td>
+					                        <td><img class="img-md" src="img/profile-photos/1.png" alt="Sample Image"></td>
+					                        <td>Medium size image.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.img-lg</td>
+					                        <td><img class="img-lg" src="img/profile-photos/1.png" alt="Sample Image"></td>
+					                        <td>Large size image.</td>
+					                    </tr>
+					                </tbody>
+					            </table>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!-- END OF IMAGE CLASSES -->
+					
+					
+					        <!-- TEXT COLORS CLASSES -->
+					        <!--===================================================-->
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Text colors</h3>
+					            </div>
+					             <div class="panel-body">
+					                <table class="table demo-nifty-w-table">
+					                <thead>
+					                    <tr>
+					                        <th>Class Name</th>
+					                        <th>Live Preview</th>
+					                        <th>Description</th>
+					                    </tr>
+					                </thead>
+					                <tbody class="demo-nifty-text">
+					                    <tr>
+					                        <td>.text-light</td>
+					                        <td>
+					                            <p class="text-light bg-dark">Sample Text</p>
+					                        </td>
+					                        <td>White font.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-muted</td>
+					                        <td>
+					                            <p class="text-muted">Sample Text</p>
+					                        </td>
+					                        <td>Gray text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-primary</td>
+					                        <td>
+					                            <p class="text-primary">Sample Text</p>
+					                        </td>
+					                        <td>Primary text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-info</td>
+					                        <td>
+					                            <p class="text-info">Sample Text</p>
+					                        </td>
+					                        <td>Info text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-success</td>
+					                        <td>
+					                            <p class="text-success">Sample Text</p>
+					                        </td>
+					                        <td>Success text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-mint</td>
+					                        <td>
+					                            <p class="text-mint">Sample Text</p>
+					                        </td>
+					                        <td>Mint text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-warning</td>
+					                        <td>
+					                            <p class="text-warning">Sample Text</p>
+					                        </td>
+					                        <td>Warning text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-danger</td>
+					                        <td>
+					                            <p class="text-danger">Sample Text</p>
+					                        </td>
+					                        <td>Danger text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-purple</td>
+					                        <td>
+					                            <p class="text-purple">Sample Text</p>
+					                        </td>
+					                        <td>Purple text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-pink</td>
+					                        <td>
+					                            <p class="text-pink">Sample Text</p>
+					                        </td>
+					                        <td>Pink text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-dark</td>
+					                        <td>
+					                            <p class="text-dark">Sample Text</p>
+					                        </td>
+					                        <td>Dark text.</td>
+					                    </tr>
+					                </tbody>
+					            </table>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!-- END TEXT COLORS CLASSES -->
+					
+					    </div>
 					</div>
-					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Add &amp; Remove Rows</h3>
-					    </div>
+					<div class="row">
+					    <div class="col-lg-6">
 					
-					    <!-- Foo Table - Add & Remove Rows -->
-					    <!--===================================================-->
-					    <div class="panel-body">
-					        <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle" data-page-size="7">
-					            <thead>
-					                <tr>
-					                    <th data-sort-ignore="true" class="min-width"></th>
-					                    <th data-sort-initial="true" data-toggle="true">First Name</th>
-					                    <th>Last Name</th>
-					                    <th data-hide="phone, tablet">Job Title</th>
-					                    <th data-hide="phone, tablet">DOB</th>
-					                    <th data-hide="phone, tablet">Status</th>
-					                </tr>
-					            </thead>
-					            <div class="pad-btm form-inline">
-					                <div class="row">
-					                    <div class="col-sm-6 text-xs-center">
-					                        <div class="form-group">
-					                            <button id="demo-btn-addrow" class="btn btn-purple"><i class="demo-pli-plus"></i> Add New Row</button>
-					                        </div>
-					                    </div>
-					                    <div class="col-sm-6 text-xs-center text-right">
-					                        <div class="form-group">
-					                            <input id="demo-input-search2" type="text" placeholder="Search" class="form-control" autocomplete="off">
-					                        </div>
-					                    </div>
-					                </div>
+					        <!-- TEXT ALIGNMENT CLASSES -->
+					        <!--===================================================-->
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Text Alignment</h3>
 					            </div>
-					            <tbody>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					            </tbody>
-					            <tfoot>
-					                <tr>
-					                    <td colspan="6">
-					                        <div class="text-right">
-					                            <ul class="pagination"></ul>
-					                        </div>
-					                    </td>
-					                </tr>
-					            </tfoot>
-					        </table>
-					    </div>
-					    <!--===================================================-->
-					    <!-- End Foo Table - Add & Remove Rows -->
+					             <div class="panel-body">
+					                <table class="table demo-nifty-w-table">
+					                <thead>
+					                    <tr>
+					                        <th>Class Name</th>
+					                        <th>Live Preview</th>
+					                        <th>Description</th>
+					                    </tr>
+					                </thead>
+					                <tbody class="demo-nifty-text">
+					                    <tr>
+					                        <td>.text-lowercase</td>
+					                        <td>
+					                            <p class="text-lowercase">Sample Text</p>
+					                        </td>
+					                        <td>Lowercased text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-uppercase</td>
+					                        <td>
+					                            <p class="text-uppercase">Sample Text</p>
+					                        </td>
+					                        <td>Uppercased text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-capitalize</td>
+					                        <td>
+					                            <p class="text-capitalize">Sample Text</p>
+					                        </td>
+					                        <td>Capitalized text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-left</td>
+					                        <td>
+					                            <p class="text-left">Sample Text</p>
+					                        </td>
+					                        <td>Left-aligned text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-center</td>
+					                        <td>
+					                            <p class="text-center">Sample Text</p>
+					                        </td>
+					                        <td>Center-aligned text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-right</td>
+					                        <td>
+					                            <p class="text-right">Sample Text</p>
+					                        </td>
+					                        <td>Right-aligned text.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-xs-left</td>
+					                        <td>
+					                            <p class="text-xs-left">Sample Text</p>
+					                        </td>
+					                        <td>Left-aligned text on extra small screens.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-sm-left</td>
+					                        <td>
+					                            <p class="text-sm-left">Sample Text</p>
+					                        </td>
+					                        <td>Left-aligned text on small screens.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-md-left</td>
+					                        <td>
+					                            <p class="text-md-left">Sample Text</p>
+					                        </td>
+					                        <td>Left-aligned text on medium screens.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-lg-left</td>
+					                        <td>
+					                            <p class="text-lg-left">Sample Text</p>
+					                        </td>
+					                        <td>Left-aligned text on large screens.</td>
+					                    </tr>
+					                </tbody>
+					            </table>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!-- END TEXT ALIGNMENT CLASSES -->
 					
+					    </div>
+					    <div class="col-lg-6">
+					
+					        <!-- TEXT ALIGNMENT CLASSES -->
+					        <!--===================================================-->
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Text Alignment</h3>
+					            </div>
+					            <div class="panel-body">
+					                <table class="table demo-nifty-w-table">
+					                <thead>
+					                    <tr>
+					                        <th>Class Name</th>
+					                        <th>Live Preview</th>
+					                        <th>Description</th>
+					                    </tr>
+					                </thead>
+					                <tbody class="demo-nifty-text">
+					                    <tr>
+					                        <td>.text-xs-center</td>
+					                        <td>
+					                            <p class="text-xs-center">Sample Text</p>
+					                        </td>
+					                        <td>Center-aligned text on extra small screens.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-sm-center</td>
+					                        <td>
+					                            <p class="text-sm-center">Sample Text</p>
+					                        </td>
+					                        <td>Center-aligned text on small screens.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-md-center</td>
+					                        <td>
+					                            <p class="text-md-center">Sample Text</p>
+					                        </td>
+					                        <td>Center-aligned text on medium screens.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-lg-center</td>
+					                        <td>
+					                            <p class="text-lg-center">Sample Text</p>
+					                        </td>
+					                        <td>Center-aligned text on large screens.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-xs-right</td>
+					                        <td>
+					                            <p class="text-xs-right">Sample Text</p>
+					                        </td>
+					                        <td>Right-aligned text on extra small screens.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-sm-right</td>
+					                        <td>
+					                            <p class="text-sm-right">Sample Text</p>
+					                        </td>
+					                        <td>Right-aligned text on small screens.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-md-right</td>
+					                        <td>
+					                            <p class="text-md-right">Sample Text</p>
+					                        </td>
+					                        <td>Right-aligned text on medium screens.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.text-lg-right</td>
+					                        <td>
+					                            <p class="text-lg-right">Sample Text</p>
+					                        </td>
+					                        <td>Right-aligned text on large screens.</td>
+					                    </tr>
+					                </tbody>
+					            </table>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!-- END TEXT ALIGNMENT CLASSES -->
+					
+					    </div>
+					</div>
+					<div class="row">
+					    <div class="col-lg-6">
+					
+					        <!-- BACKGROUND CLASSES -->
+					        <!--===================================================-->
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Background</h3>
+					            </div>
+					            <div class="panel-body">
+					                <table class="table demo-nifty-w-table">
+					                <thead>
+					                    <tr>
+					                        <th>Class Name</th>
+					                        <th>Live Preview</th>
+					                        <th>Description</th>
+					                    </tr>
+					                </thead>
+					                <tbody class="demo-nifty-background">
+					                    <tr>
+					                        <td style="width: 200px">.bg-light</td>
+					                        <td>
+					                            <div class="bg-light">BOX</div>
+					                        </td>
+					                        <td>White background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-gray-light</td>
+					                        <td>
+					                            <div class="bg-gray-light">BOX</div>
+					                        </td>
+					                        <td>Ligth gray background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-gray</td>
+					                        <td>
+					                            <div class="bg-gray">BOX</div>
+					                        </td>
+					                        <td>Gray background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-gray-dark</td>
+					                        <td>
+					                            <div class="bg-gray-dark">BOX</div>
+					                        </td>
+					                        <td>Dark gray background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-primary</td>
+					                        <td>
+					                            <div class="bg-primary">BOX</div>
+					                        </td>
+					                        <td>Primary background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-info</td>
+					                        <td>
+					                            <div class="bg-info">BOX</div>
+					                        </td>
+					                        <td>Info background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-success</td>
+					                        <td>
+					                            <div class="bg-success">BOX</div>
+					                        </td>
+					                        <td>Success background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-mint</td>
+					                        <td>
+					                            <div class="bg-mint">BOX</div>
+					                        </td>
+					                        <td>Mint background.</td>
+					                    </tr>
+					                </tbody>
+					            </table>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!-- END BACKGROUND CLASSES -->
+					
+					    </div>
+					    <div class="col-lg-6">
+					
+					        <!-- BACKGROUND CLASSES -->
+					        <!--===================================================-->
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Background</h3>
+					            </div>
+					            <div class="panel-body">
+					                <table class="table demo-nifty-w-table">
+					                <thead>
+					                    <tr>
+					                        <th>Class Name</th>
+					                        <th>Live Preview</th>
+					                        <th>Description</th>
+					                    </tr>
+					                </thead>
+					                <tbody class="demo-nifty-background">
+					                    <tr>
+					                        <td style="width: 200px">.bg-warning</td>
+					                        <td style="width: 200px">
+					                            <div class="bg-warning">BOX</div>
+					                        </td>
+					                        <td>Warning background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-danger</td>
+					                        <td>
+					                            <div class="bg-danger">BOX</div>
+					                        </td>
+					                        <td>Danger background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-purple</td>
+					                        <td>
+					                            <div class="bg-purple">BOX</div>
+					                        </td>
+					                        <td>Purple background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-pink</td>
+					                        <td>
+					                            <div class="bg-pink">BOX</div>
+					                        </td>
+					                        <td>Pink background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-dark</td>
+					                        <td>
+					                            <div class="bg-dark">BOX</div>
+					                        </td>
+					                        <td>Dark background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-trans</td>
+					                        <td>
+					                            <div class="bg-trans">BOX</div>
+					                        </td>
+					                        <td>Transparent background.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-trans-light</td>
+					                        <td>
+					                            <div class="bg-trans-light">BOX</div>
+					                        </td>
+					                        <td>Background white with opacity.</td>
+					                    </tr>
+					                    <tr>
+					                        <td>.bg-trans-dark</td>
+					                        <td>
+					                            <div class="bg-trans-dark">BOX</div>
+					                        </td>
+					                        <td>Background black with opacity.</td>
+					                    </tr>
+					                </tbody>
+					            </table>
+					            </div>
+					        </div>
+					        <!--===================================================-->
+					        <!-- END BACKGROUND CLASSES -->
+					
+					    </div>
 					</div>
 					
 					
@@ -1859,7 +1962,7 @@
 						
 						            <!--Menu list item-->
 						            <li>
-						                <a href="NOT for Upload refrence-pages\widgets.html">
+						                <a href="widgets.html">
 						                    <i class="demo-psi-gear-2"></i>
 						                    <span class="menu-title">
 												<strong>Widgets</strong>
@@ -1883,9 +1986,9 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages\ui-buttons.html">Buttons</a></li>
+						                    <li><a href="ui-buttons.html">Buttons</a></li>
 											<li><a href="ui-panels.html">Panels</a></li>
-											<li><a href="NOT for Upload refrence-pages\ui-modals.html">Modals</a></li>
+											<li><a href="ui-modals.html">Modals</a></li>
 											<li><a href="ui-progress-bars.html">Progress bars</a></li>
 											<li><a href="ui-components.html">Components</a></li>
 											<li><a href="ui-typography.html">Typography</a></li>
@@ -1906,19 +2009,19 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages\forms-general.html">General</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-components.html">Advanced Components</a></li>
+						                    <li><a href="forms-general.html">General</a></li>
+											<li><a href="forms-components.html">Advanced Components</a></li>
 											<li><a href="forms-validation.html">Validation</a></li>
 											<li><a href="forms-wizard.html">Wizard</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-file-upload.html">File Upload</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-text-editor.html">Text Editor</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-markdown.html">Markdown</a></li>
+											<li><a href="forms-file-upload.html">File Upload</a></li>
+											<li><a href="forms-text-editor.html">Text Editor</a></li>
+											<li><a href="forms-markdown.html">Markdown</a></li>
 											
 						                </ul>
 						            </li>
 						
 						            <!--Menu list item-->
-						            <li class="active-sub">
+						            <li>
 						                <a href="#">
 						                    <i class="demo-psi-receipt-4"></i>
 						                    <span class="menu-title">Tables</span>
@@ -1926,18 +2029,18 @@
 						                </a>
 						
 						                <!--Submenu-->
-						                <ul class="collapse in">
+						                <ul class="collapse">
 						                    <li><a href="tables-static.html">Static Tables</a></li>
 											<li><a href="tables-bootstrap.html">Bootstrap Tables</a></li>
 											<li><a href="tables-datatable.html">Data Tables</a></li>
-											<li class="active-link"><a href="tables-footable.html">Foo Tables</a></li>
+											<li><a href="tables-footable.html">Foo Tables</a></li>
 											
 						                </ul>
 						            </li>
 						
 						            <!--Menu list item-->
 						            <li>
-						                <a href="NOT for Upload refrence-pages\charts.html">
+						                <a href="charts.html">
 						                    <i class="demo-psi-bar-chart"></i>
 						                    <span class="menu-title">Charts</span>
 						                </a>
@@ -1993,18 +2096,18 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages/pages-blank.html">Blank Page</a></li>
-											<li><a href="profile-page.html">Profile</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-search-results.html">Search Results</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-faq.html">FAQ</a></li>
+						                    <li><a href="pages-blank.html">Blank Page</a></li>
+											<li><a href="pages-profile.html">Profile</a></li>
+											<li><a href="pages-search-results.html">Search Results</a></li>
+											<li><a href="pages-faq.html">FAQ</a></li>
 											<li class="list-divider"></li>
-											<li><a href="NOT for Upload refrence-pages/pages-404.html">404 Error</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-500.html">500 Error</a></li>
+											<li><a href="pages-404.html">404 Error</a></li>
+											<li><a href="pages-500.html">500 Error</a></li>
 											<li class="list-divider"></li>
-											<li><a href="NOT for Upload refrence-pages/pages-login.html">Login</a></li>
-											<li><a href="user-register.html">Register</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-password-reminder.html">Password Reminder</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-lock-screen.html">Lock Screen</a></li>
+											<li><a href="pages-login.html">Login</a></li>
+											<li><a href="pages-register.html">Register</a></li>
+											<li><a href="pages-password-reminder.html">Password Reminder</a></li>
+											<li><a href="pages-lock-screen.html">Lock Screen</a></li>
 											
 						                </ul>
 						            </li>
@@ -2094,7 +2197,7 @@
 						            </li>
 						
 						            <!--Menu list item-->
-						            <li>
+						            <li class="active-link">
 						                <a href="helper-classes.html">
 						                    <i class="demo-psi-inbox-full"></i>
 						                    <span class="menu-title">Helper Classes</span>
@@ -2640,4 +2743,3 @@
 
 </body>
 </html>
-

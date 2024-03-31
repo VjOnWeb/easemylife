@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foo Tables | Nifty - Admin Template</title>
+    <title>Alerts &amp; Tooltips | Nifty - Admin Template</title>
 
 
     <!--STYLESHEET-->
@@ -31,10 +31,6 @@
 
 
         
-    <!--FooTable [ OPTIONAL ]-->
-    <link href="plugins/fooTable/css/footable.core.css" rel="stylesheet">
-
-
 
 
 
@@ -69,14 +65,6 @@
     <script src="js/demo/nifty-demo.min.js"></script>
 
     
-    <!--FooTable [ OPTIONAL ]-->
-    <script src="plugins/fooTable/dist/footable.all.min.js"></script>
-
-
-    <!--FooTable Example [ SAMPLE ]-->
-    <script src="js/demo/tables-footable.js"></script>
-
-
 
 
     
@@ -524,7 +512,7 @@
 
                                 <!-- Dropdown footer -->
                                 <div class="pad-all text-right">
-                                    <a href="NOT for Upload refrence-pages/pages-login.html" class="btn btn-primary">
+                                    <a href="pages-login.html" class="btn btn-primary">
                                         <i class="demo-pli-unlock"></i> Logout
                                     </a>
                                 </div>
@@ -557,7 +545,7 @@
                 <!--Page Title-->
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <div id="page-title">
-                    <h1 class="page-header text-overflow">Foo Tables</h1>
+                    <h1 class="page-header text-overflow">Alerts &amp; Tooltips</h1>
 
                     <!--Searchbox-->
                     <div class="searchbox">
@@ -572,880 +560,328 @@
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <!--End page title-->
 
+
+                <!--Breadcrumb-->
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">UI</a></li>
+					<li class="active">Alerts</li>
+                </ol>
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <!--End breadcrumb-->
+
+
+        
+
                 <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
                     
 					
+					<div class="panel">
+					    <div class="panel-heading">
+					        <h3 class="panel-title">Basic Example</h3>
+					    </div>
+					
+					    <!-- Alert types -->
+					    <div class="panel-body demo-nifty-alert">
+					        <p class="pad-btm">Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual classes (e.g., <code>.alert-success</code>) for basic alert messages.</p>
+					        <div class="row">
+					            <div class="col-sm-6">
+					
+					                <!-- Primary Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-primary">
+					                    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+					                </div>
+					
+					                <!-- Success Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-success">
+					                    <strong>Well done!</strong> You successfully read this important alert message.
+					                </div>
+					
+					                <!-- Info Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-info">
+					                    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+					                </div>
+					
+					                <!-- Warning Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-warning">
+					                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+					                </div>
+					
+					                <!-- Danger Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-danger">
+					                    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+					                </div>
+					
+					            </div>
+					            <div class="col-sm-6">
+					
+					                <!-- Mint Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-mint">
+					                    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+					                </div>
+					
+					                <!-- Purple Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-purple">
+					                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+					                </div>
+					
+					                <!-- Pink Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-pink">
+					                    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+					                </div>
+					
+					                <!-- Dark Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-dark">
+					                    <strong>Well done!</strong> You successfully read this important alert message.
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					</div>
+					
+					<div class="panel">
+					    <div class="panel-heading">
+					        <h3 class="panel-title">Dismissible Alerts</h3>
+					    </div>
+					
+					    <!-- Alert types -->
+					    <div class="panel-body demo-nifty-alert">
+					        <p class="pad-btm">Build on any alert by adding an optional <code>.alert-dismissible</code> and close button.</p>
+					        <div class="row">
+					            <div class="col-sm-6">
+					
+					                <!-- Primary Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-primary">
+					                    <button class="close" data-dismiss="alert"><i class="pci-cross pci-circle"></i></button>
+					                    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+					                </div>
+					
+					                <!-- Success Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-success">
+					                    <button class="close" data-dismiss="alert"><i class="pci-cross pci-circle"></i></button>
+					                    <strong>Well done!</strong> You successfully read this important alert message.
+					                </div>
+					
+					                <!-- Info Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-info">
+					                    <button class="close" data-dismiss="alert"><i class="pci-cross pci-circle"></i></button>
+					                    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+					                </div>
+					
+					                <!-- Warning Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-warning">
+					                    <button class="close" data-dismiss="alert"><i class="pci-cross pci-circle"></i></button>
+					                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+					                </div>
+					
+					                <!-- Danger Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-danger">
+					                    <button class="close" data-dismiss="alert"><i class="pci-cross pci-circle"></i></button>
+					                    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+					                </div>
+					
+					            </div>
+					            <div class="col-sm-6">
+					
+					                <!-- Mint Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-mint">
+					                    <button class="close" data-dismiss="alert"><i class="pci-cross pci-circle"></i></button>
+					                    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+					                </div>
+					
+					                <!-- Purple Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-purple">
+					                    <button class="close" data-dismiss="alert"><i class="pci-cross pci-circle"></i></button>
+					                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+					                </div>
+					
+					                <!-- Pink Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-pink">
+					                    <button class="close" data-dismiss="alert"><i class="pci-cross pci-circle"></i></button>
+					                    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+					                </div>
+					
+					                <!-- Dark Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-dark">
+					                    <button class="close" data-dismiss="alert"><i class="pci-cross pci-circle"></i></button>
+					                    <strong>Well done!</strong> You successfully read this important alert message.
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					</div>
+					
+					
+					<div class="panel">
+					    <div class="panel-heading">
+					        <h3 class="panel-title">Links in alerts</h3>
+					    </div>
+					
+					    <!-- Alert types -->
+					    <div class="panel-body demo-nifty-alert">
+					        <p class="pad-btm">Use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
+					        <div class="row">
+					            <div class="col-sm-6">
+					
+					                <!-- Primary Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-primary">
+					                    <strong>Heads up!</strong> This alert needs <a href="#" class="alert-link">your attention</a>, but it's not super important.
+					                </div>
+					
+					                <!-- Success Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-success">
+					                    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message.</a>
+					                </div>
+					
+					                <!-- Info Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-info">
+					                    <strong>Heads up!</strong> This alert <a href="#" class="alert-link">needs your attention</a>, but it's not super important.
+					                </div>
+					
+					                <!-- Warning Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-warning">
+					                    <strong>Warning!</strong> Better check yourself, <a href="#" class="alert-link">you're not looking too good.</a>
+					                </div>
+					
+					                <!-- Danger Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-danger">
+					                    <strong>Oh snap!</strong> Change a few things up and try <a href="#" class="alert-link">submitting again.</a>
+					                </div>
+					
+					            </div>
+					            <div class="col-sm-6">
+					
+					                <!-- Mint Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-mint">
+					                    <strong>Heads up!</strong> This alert <a href="#" class="alert-link">needs your attention</a>, but it's not super important.
+					                </div>
+					
+					                <!-- Purple Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-purple">
+					                    <strong>Warning!</strong> Better <a href="#" class="alert-link">check yourself</a>, you're not looking too good.
+					                </div>
+					
+					                <!-- Pink Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-pink">
+					                    <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+					                </div>
+					
+					                <!-- Dark Alert -->
+					                <!--===================================================-->
+					                <div class="alert alert-dark">
+					                    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					</div>
+					
+					<hr class="new-section-sm">
+					
 					<div class="row">
-					    <div class="col-sm-6">
+					
+					    <!--Tooltips-->
+					    <!--===================================================-->
+					
+					    <div class="col-lg-6">
 					        <div class="panel">
 					            <div class="panel-heading">
-					                <h3 class="panel-title">Row Toggler</h3>
+					                <h3 class="panel-title">Tooltips</h3>
 					            </div>
-					
-					            <!-- Foo Table - Row Toggler -->
-					            <!--===================================================-->
 					            <div class="panel-body">
-					                <table id="demo-foo-row-toggler" class="table toggle-circle">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Row Toggler -->
 					
+					                <!--Tooltip Example-->
+					                <p class="muted">
+					                    Lorem ipsum dolor sit amet <a class="btn-link text-semibold add-tooltip" data-toggle="tooltip" href="#" data-original-title="Default tooltip">consectetuer</a>
+					                    adipiscing elit, <a class="btn-link text-semibold add-tooltip" data-toggle="tooltip" href="#" data-original-title="Another tooltip"> sed diam nonummy</a>
+					                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+					                    <a class="btn-link text-semibold add-tooltip" data-toggle="tooltip" href="#" data-original-title="The last tip!">quis nostrud</a>.
+					                </p>
+					                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					
+					            </div>
 					        </div>
 					        <div class="panel">
 					            <div class="panel-heading">
-					                <h3 class="panel-title">Accordion</h3>
+					                <h3 class="panel-title">Four directions</h3>
 					            </div>
+					            <div class="panel-body demo-nifty-btn">
 					
-					            <!-- Foo Table - Accordion -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <table id="demo-foo-accordion" class="table toggle-arrow-tiny">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
+					                <!--Tooltip directions-->
+					                <button class="btn btn-default add-tooltip" data-toggle="tooltip" data-container="body" data-placement="left" data-original-title="Tooltip on left">Tooltip on left</button>
+					                <button class="btn btn-default add-tooltip" data-toggle="tooltip" data-container="body" data-placement="top" data-original-title="Tooltip on top">Tooltip on top</button>
+					                <button class="btn btn-default add-tooltip" data-toggle="tooltip" data-container="body" data-placement="bottom" data-original-title="Tooltip on bottom">Tooltip on bottom</button>
+					                <button class="btn btn-default add-tooltip" data-toggle="tooltip" data-container="body" data-placement="right" data-original-title="Tooltip on right">Tooltip on right</button>
+					                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					
 					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Accordion -->
-					
 					        </div>
 					    </div>
-					    <div class="col-sm-6">
+					    <!--===================================================-->
+					
+					
+					
+					    <!--POPOVERS-->
+					    <!--===================================================-->
+					    <div class="col-lg-6">
 					        <div class="panel">
 					            <div class="panel-heading">
-					                <h3 class="panel-title">Expand / Collapse All Rows</h3>
+					                <h3 class="panel-title">Dismissible popover</h3>
 					            </div>
-					
-					            <!-- Foo Table - Expand / Collapse All Rows -->
-					            <!--===================================================-->
 					            <div class="panel-body">
-					                <div class="pad-btm">
-					                    <button id="demo-foo-collapse" class="btn btn-info">Collapse All</button>
-					                    <button id="demo-foo-expand" class="btn btn-warning">Expand All</button>
-					                </div>
-					                <table id="demo-foo-col-exp" class="table toggle-circle">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Expand / Collapse All Rows -->
 					
+					                <!--Dismissible popover-->
+					                <a href="#popover" class="btn btn-lg btn-warning add-popover" data-original-title="Bootstrap Popover" data-content="it's so simple to create a tooltop for my website!" data-placement="top" data-trigger="focus" data-toggle="popover">Dismissible popover</a>
+					                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					
+					            </div>
 					        </div>
 					        <div class="panel">
 					            <div class="panel-heading">
-					                <h3 class="panel-title">Pagination</h3>
+					                <h3 class="panel-title">Four directions</h3>
 					            </div>
+					            <div class="panel-body demo-nifty-btn">
 					
-					            <!-- Foo Table - Pagination -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <label class="form-inline">Show
-					                    <select id="demo-show-entries" class="form-control input-sm">
-					                        <option value="5">5</option>
-					                        <option value="10">10</option>
-					                        <option value="15">15</option>
-					                        <option value="20">20</option>
-					                    </select>
-					                    entries
-					                </label>
-					                <table id="demo-foo-pagination" class="table toggle-arrow-tiny" data-page-size="5">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                    <tfoot>
-					                        <tr>
-					                            <td colspan="5">
-					                                <div class="text-right">
-					                                    <ul class="pagination"></ul>
-					                                </div>
-					                            </td>
-					                        </tr>
-					                    </tfoot>
-					                </table>
+					                <!--Popover directions-->
+					                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					                <button class="btn btn-default btn-active-success add-popover" data-toggle="popover" data-container="body" data-placement="left" data-original-title="Bootstrap Popover" data-content="Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.">Popover on left</button>
+					                <button class="btn btn-default btn-active-success add-popover" data-toggle="popover" data-container="body" data-placement="top" data-original-title="Bootstrap Popover" data-content="Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.">Popover on top</button>
+					                <button class="btn btn-default btn-active-success add-popover" data-toggle="popover" data-container="body" data-placement="bottom" data-original-title="Bootstrap Popover" data-content="Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.">Popover on bottom</button>
+					                <button class="btn btn-default btn-active-success add-popover" data-toggle="popover" data-container="body" data-placement="right" data-original-title="Bootstrap Popover" data-content="Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.">Popover on right</button>
+					                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+					
 					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Pagination -->
-					
 					        </div>
 					    </div>
-					</div>
-					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Filtering</h3>
-					    </div>
-					
-					    <!-- Foo Table - Filtering -->
-					    <!--===================================================-->
-					    <div class="panel-body">
-					        <table id="demo-foo-filtering" class="table table-bordered table-hover toggle-circle" data-page-size="7">
-					            <thead>
-					                <tr>
-					                    <th data-toggle="true">First Name</th>
-					                    <th>Last Name</th>
-					                    <th data-hide="phone, tablet">Job Title</th>
-					                    <th data-hide="phone, tablet">DOB</th>
-					                    <th data-hide="phone, tablet">Status</th>
-					                </tr>
-					            </thead>
-					            <div class="pad-btm form-inline">
-					                <div class="row">
-					                    <div class="col-sm-6 text-xs-center">
-					                        <div class="form-group">
-					                            <label class="control-label">Status</label>
-					                            <select id="demo-foo-filter-status" class="form-control">
-					                                <option value="">Show all</option>
-					                                <option value="active">Active</option>
-					                                <option value="disabled">Disabled</option>
-					                                <option value="suspended">Suspended</option>
-					                            </select>
-					                        </div>
-					                    </div>
-					                    <div class="col-sm-6 text-xs-center text-right">
-					                        <div class="form-group">
-					                            <input id="demo-foo-search" type="text" placeholder="Search" class="form-control" autocomplete="off">
-					                        </div>
-					                    </div>
-					                </div>
-					            </div>
-					            <tbody>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					            </tbody>
-					            <tfoot>
-					                <tr>
-					                    <td colspan="5">
-					                        <div class="text-right">
-					                            <ul class="pagination"></ul>
-					                        </div>
-					                    </td>
-					                </tr>
-					            </tfoot>
-					        </table>
-					    </div>
-					    <!--===================================================-->
-					    <!-- End Foo Table - Filtering -->
-					
-					</div>
-					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Add &amp; Remove Rows</h3>
-					    </div>
-					
-					    <!-- Foo Table - Add & Remove Rows -->
-					    <!--===================================================-->
-					    <div class="panel-body">
-					        <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle" data-page-size="7">
-					            <thead>
-					                <tr>
-					                    <th data-sort-ignore="true" class="min-width"></th>
-					                    <th data-sort-initial="true" data-toggle="true">First Name</th>
-					                    <th>Last Name</th>
-					                    <th data-hide="phone, tablet">Job Title</th>
-					                    <th data-hide="phone, tablet">DOB</th>
-					                    <th data-hide="phone, tablet">Status</th>
-					                </tr>
-					            </thead>
-					            <div class="pad-btm form-inline">
-					                <div class="row">
-					                    <div class="col-sm-6 text-xs-center">
-					                        <div class="form-group">
-					                            <button id="demo-btn-addrow" class="btn btn-purple"><i class="demo-pli-plus"></i> Add New Row</button>
-					                        </div>
-					                    </div>
-					                    <div class="col-sm-6 text-xs-center text-right">
-					                        <div class="form-group">
-					                            <input id="demo-input-search2" type="text" placeholder="Search" class="form-control" autocomplete="off">
-					                        </div>
-					                    </div>
-					                </div>
-					            </div>
-					            <tbody>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					            </tbody>
-					            <tfoot>
-					                <tr>
-					                    <td colspan="6">
-					                        <div class="text-right">
-					                            <ul class="pagination"></ul>
-					                        </div>
-					                    </td>
-					                </tr>
-					            </tfoot>
-					        </table>
-					    </div>
-					    <!--===================================================-->
-					    <!-- End Foo Table - Add & Remove Rows -->
-					
 					</div>
 					
 					
@@ -1859,7 +1295,7 @@
 						
 						            <!--Menu list item-->
 						            <li>
-						                <a href="NOT for Upload refrence-pages\widgets.html">
+						                <a href="widgets.html">
 						                    <i class="demo-psi-gear-2"></i>
 						                    <span class="menu-title">
 												<strong>Widgets</strong>
@@ -1874,7 +1310,7 @@
 						            <li class="list-header">Components</li>
 						
 						            <!--Menu list item-->
-						            <li>
+						            <li class="active-sub">
 						                <a href="#">
 						                    <i class="demo-psi-boot-2"></i>
 						                    <span class="menu-title">UI Elements</span>
@@ -1882,16 +1318,16 @@
 						                </a>
 						
 						                <!--Submenu-->
-						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages\ui-buttons.html">Buttons</a></li>
+						                <ul class="collapse in">
+						                    <li><a href="ui-buttons.html">Buttons</a></li>
 											<li><a href="ui-panels.html">Panels</a></li>
-											<li><a href="NOT for Upload refrence-pages\ui-modals.html">Modals</a></li>
+											<li><a href="ui-modals.html">Modals</a></li>
 											<li><a href="ui-progress-bars.html">Progress bars</a></li>
 											<li><a href="ui-components.html">Components</a></li>
 											<li><a href="ui-typography.html">Typography</a></li>
 											<li><a href="ui-list-group.html">List Group</a></li>
 											<li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
-											<li><a href="ui-alerts-tooltips.html">Alerts &amp; Tooltips</a></li>
+											<li class="active-link"><a href="ui-alerts-tooltips.html">Alerts &amp; Tooltips</a></li>
 											
 						                </ul>
 						            </li>
@@ -1906,19 +1342,19 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages\forms-general.html">General</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-components.html">Advanced Components</a></li>
+						                    <li><a href="forms-general.html">General</a></li>
+											<li><a href="forms-components.html">Advanced Components</a></li>
 											<li><a href="forms-validation.html">Validation</a></li>
 											<li><a href="forms-wizard.html">Wizard</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-file-upload.html">File Upload</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-text-editor.html">Text Editor</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-markdown.html">Markdown</a></li>
+											<li><a href="forms-file-upload.html">File Upload</a></li>
+											<li><a href="forms-text-editor.html">Text Editor</a></li>
+											<li><a href="forms-markdown.html">Markdown</a></li>
 											
 						                </ul>
 						            </li>
 						
 						            <!--Menu list item-->
-						            <li class="active-sub">
+						            <li>
 						                <a href="#">
 						                    <i class="demo-psi-receipt-4"></i>
 						                    <span class="menu-title">Tables</span>
@@ -1926,18 +1362,18 @@
 						                </a>
 						
 						                <!--Submenu-->
-						                <ul class="collapse in">
+						                <ul class="collapse">
 						                    <li><a href="tables-static.html">Static Tables</a></li>
 											<li><a href="tables-bootstrap.html">Bootstrap Tables</a></li>
 											<li><a href="tables-datatable.html">Data Tables</a></li>
-											<li class="active-link"><a href="tables-footable.html">Foo Tables</a></li>
+											<li><a href="tables-footable.html">Foo Tables</a></li>
 											
 						                </ul>
 						            </li>
 						
 						            <!--Menu list item-->
 						            <li>
-						                <a href="NOT for Upload refrence-pages\charts.html">
+						                <a href="charts.html">
 						                    <i class="demo-psi-bar-chart"></i>
 						                    <span class="menu-title">Charts</span>
 						                </a>
@@ -1993,18 +1429,18 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages/pages-blank.html">Blank Page</a></li>
-											<li><a href="profile-page.html">Profile</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-search-results.html">Search Results</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-faq.html">FAQ</a></li>
+						                    <li><a href="pages-blank.html">Blank Page</a></li>
+											<li><a href="pages-profile.html">Profile</a></li>
+											<li><a href="pages-search-results.html">Search Results</a></li>
+											<li><a href="pages-faq.html">FAQ</a></li>
 											<li class="list-divider"></li>
-											<li><a href="NOT for Upload refrence-pages/pages-404.html">404 Error</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-500.html">500 Error</a></li>
+											<li><a href="pages-404.html">404 Error</a></li>
+											<li><a href="pages-500.html">500 Error</a></li>
 											<li class="list-divider"></li>
-											<li><a href="NOT for Upload refrence-pages/pages-login.html">Login</a></li>
-											<li><a href="user-register.html">Register</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-password-reminder.html">Password Reminder</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-lock-screen.html">Lock Screen</a></li>
+											<li><a href="pages-login.html">Login</a></li>
+											<li><a href="pages-register.html">Register</a></li>
+											<li><a href="pages-password-reminder.html">Password Reminder</a></li>
+											<li><a href="pages-lock-screen.html">Lock Screen</a></li>
 											
 						                </ul>
 						            </li>
@@ -2640,4 +2076,3 @@
 
 </body>
 </html>
-

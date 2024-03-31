@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foo Tables | Nifty - Admin Template</title>
+    <title>General Elements | Nifty - Admin Template</title>
 
 
     <!--STYLESHEET-->
@@ -31,8 +31,8 @@
 
 
         
-    <!--FooTable [ OPTIONAL ]-->
-    <link href="plugins/fooTable/css/footable.core.css" rel="stylesheet">
+    <!--Magic Checkbox [ OPTIONAL ]-->
+    <link href="plugins/magic-check/css/magic-check.min.css" rel="stylesheet">
 
 
 
@@ -69,14 +69,6 @@
     <script src="js/demo/nifty-demo.min.js"></script>
 
     
-    <!--FooTable [ OPTIONAL ]-->
-    <script src="plugins/fooTable/dist/footable.all.min.js"></script>
-
-
-    <!--FooTable Example [ SAMPLE ]-->
-    <script src="js/demo/tables-footable.js"></script>
-
-
 
 
     
@@ -524,7 +516,7 @@
 
                                 <!-- Dropdown footer -->
                                 <div class="pad-all text-right">
-                                    <a href="NOT for Upload refrence-pages/pages-login.html" class="btn btn-primary">
+                                    <a href="pages-login.html" class="btn btn-primary">
                                         <i class="demo-pli-unlock"></i> Logout
                                     </a>
                                 </div>
@@ -557,7 +549,7 @@
                 <!--Page Title-->
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <div id="page-title">
-                    <h1 class="page-header text-overflow">Foo Tables</h1>
+                    <h1 class="page-header text-overflow">General Elements</h1>
 
                     <!--Searchbox-->
                     <div class="searchbox">
@@ -572,882 +564,800 @@
                 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <!--End page title-->
 
+
+                <!--Breadcrumb-->
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Forms</a></li>
+					<li class="active">General Elements</li>
+                </ol>
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <!--End breadcrumb-->
+
+
+        
+
                 <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
                     
+					<div class="panel">
+					    <div class="panel-heading">
+					        <h3 class="panel-title">Inline Form</h3>
+					    </div>
+					    <div class="panel-body">
 					
+					        <!-- Inline Form  -->
+					        <!--===================================================-->
+					        <form class="form-inline">
+					            <div class="form-group">
+					                <label for="demo-inline-inputmail" class="sr-only">Email address</label>
+					                <input type="email" placeholder="Enter email" id="demo-inline-inputmail" class="form-control">
+					            </div>
+					            <div class="form-group">
+					                <label for="demo-inline-inputpass" class="sr-only">Password</label>
+					                <input type="password" placeholder="Password" id="demo-inline-inputpass" class="form-control">
+					            </div>
+					            <div class="checkbox">
+					                <input id="demo-remember-me" class="magic-checkbox" type="checkbox">
+					                <label for="demo-remember-me">Remember me</label>
+					            </div>
+					            <button class="btn btn-primary" type="submit">Sign in</button>
+					        </form>
+					        <!--===================================================-->
+					        <!-- End Inline Form  -->
+					
+					    </div>
+					</div>
 					<div class="row">
 					    <div class="col-sm-6">
 					        <div class="panel">
 					            <div class="panel-heading">
-					                <h3 class="panel-title">Row Toggler</h3>
+					                <h3 class="panel-title">Block styled form</h3>
 					            </div>
 					
-					            <!-- Foo Table - Row Toggler -->
+					            <!--Block Styled Form -->
 					            <!--===================================================-->
-					            <div class="panel-body">
-					                <table id="demo-foo-row-toggler" class="table toggle-circle">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
+					            <form>
+					                <div class="panel-body">
+					                    <div class="row">
+					                        <div class="col-sm-6">
+					                            <div class="form-group">
+					                                <label class="control-label">Firstname</label>
+					                                <input type="text" class="form-control">
+					                            </div>
+					                        </div>
+					                        <div class="col-sm-6">
+					                            <div class="form-group">
+					                                <label class="control-label">Lastname</label>
+					                                <input type="text" class="form-control">
+					                            </div>
+					                        </div>
+					                    </div>
+					                    <div class="row">
+					                        <div class="col-sm-6">
+					                            <div class="form-group">
+					                                <label class="control-label">Email</label>
+					                                <input type="email" class="form-control">
+					                            </div>
+					                        </div>
+					                        <div class="col-sm-6">
+					                            <div class="form-group">
+					                                <label class="control-label">Website</label>
+					                                <input type="url" class="form-control">
+					                            </div>
+					                        </div>
+					                    </div>
+					                </div>
+					                <div class="panel-footer text-right">
+					                    <button class="btn btn-success" type="submit">Submit</button>
+					                </div>
+					            </form>
 					            <!--===================================================-->
-					            <!-- End Foo Table - Row Toggler -->
-					
-					        </div>
-					        <div class="panel">
-					            <div class="panel-heading">
-					                <h3 class="panel-title">Accordion</h3>
-					            </div>
-					
-					            <!-- Foo Table - Accordion -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <table id="demo-foo-accordion" class="table toggle-arrow-tiny">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Accordion -->
+					            <!--End Block Styled Form -->
 					
 					        </div>
 					    </div>
 					    <div class="col-sm-6">
 					        <div class="panel">
 					            <div class="panel-heading">
-					                <h3 class="panel-title">Expand / Collapse All Rows</h3>
+					                <h3 class="panel-title">Horizontal form</h3>
 					            </div>
 					
-					            <!-- Foo Table - Expand / Collapse All Rows -->
+					            <!--Horizontal Form-->
 					            <!--===================================================-->
-					            <div class="panel-body">
-					                <div class="pad-btm">
-					                    <button id="demo-foo-collapse" class="btn btn-info">Collapse All</button>
-					                    <button id="demo-foo-expand" class="btn btn-warning">Expand All</button>
+					            <form class="form-horizontal">
+					                <div class="panel-body">
+					                    <div class="form-group">
+					                        <label class="col-sm-3 control-label" for="demo-hor-inputemail">Email</label>
+					                        <div class="col-sm-9">
+					                            <input type="email" placeholder="Email" id="demo-hor-inputemail" class="form-control">
+					                        </div>
+					                    </div>
+					                    <div class="form-group">
+					                        <label class="col-sm-3 control-label" for="demo-hor-inputpass">Password</label>
+					                        <div class="col-sm-9">
+					                            <input type="password" placeholder="Password" id="demo-hor-inputpass" class="form-control">
+					                        </div>
+					                    </div>
+					                    <div class="form-group">
+					                        <div class="col-sm-offset-3 col-sm-9">
+					                            <input id="demo-remember-me-2" class="magic-checkbox" type="checkbox">
+					                            <label for="demo-remember-me-2">Remember me</label>
+					                        </div>
+					                    </div>
 					                </div>
-					                <table id="demo-foo-col-exp" class="table toggle-circle">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
+					                <div class="panel-footer text-right">
+					                    <button class="btn btn-success" type="submit">Sign in</button>
+					                </div>
+					            </form>
 					            <!--===================================================-->
-					            <!-- End Foo Table - Expand / Collapse All Rows -->
+					            <!--End Horizontal Form-->
+					
+					        </div>
+					    </div>
+					</div>
+					<div class="row">
+					    <div class="col-lg-6">
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Input size</h3>
+					            </div>
+					
+					
+					            <!--Input Size-->
+					            <!--===================================================-->
+					            <form class="form-horizontal">
+					                <div class="panel-body">
+					                    <div class="form-group">
+					                        <label class="col-sm-3 control-label" for="demo-is-inputsmall">Small Input</label>
+					                        <div class="col-sm-6">
+					                            <input type="text" placeholder=".input-sm" class="form-control input-sm" id="demo-is-inputsmall">
+					                        </div>
+					                    </div>
+					                    <div class="form-group">
+					                        <label for="demo-is-inputnormal" class="col-sm-3 control-label">Normal Input</label>
+					                        <div class="col-sm-6">
+					                            <input type="text" placeholder="Normal" class="form-control" id="demo-is-inputnormal">
+					                        </div>
+					                    </div>
+					                    <div class="form-group">
+					                        <label for="demo-is-inputlarge" class="col-sm-3 control-label">Large Input</label>
+					                        <div class="col-sm-6">
+					                            <input type="text" placeholder=".input-lg" class="form-control input-lg" id="demo-is-inputlarge">
+					                        </div>
+					                    </div>
+					                    <div class="form-group">
+					                        <label class="col-sm-3 control-label">Grid Inputs</label>
+					                        <div class="col-sm-3">
+					                            <input type="text" placeholder=".col-sm-3" class="form-control">
+					                        </div>
+					                    </div>
+					                    <div class="form-group">
+					                        <div class="col-sm-5 col-sm-offset-3">
+					                            <input type="text" placeholder=".col-sm-5" class="form-control">
+					                        </div>
+					                    </div>
+					                    <div class="form-group">
+					                        <div class="col-sm-7 col-sm-offset-3">
+					                            <input type="text" placeholder=".col-sm-7" class="form-control">
+					                        </div>
+					                    </div>
+					                    <div class="form-group">
+					                        <div class="col-sm-9 col-sm-offset-3">
+					                            <input type="text" placeholder=".col-sm-9" class="form-control">
+					                        </div>
+					                    </div>
+					                </div>
+					                <div class="panel-footer">
+					                    <div class="row">
+					                        <div class="col-sm-9 col-sm-offset-3">
+					                            <button class="btn btn-mint" type="submit">Login</button>
+					                            <button class="btn btn-warning" type="reset">Reset</button>
+					                        </div>
+					                    </div>
+					                </div>
+					            </form>
+					            <!--===================================================-->
+					            <!--End Input Size-->
+					
+					
+					        </div>
+					    </div>
+					    <div class="col-lg-6">
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">No label form</h3>
+					            </div>
+					
+					            <!--No Label Form-->
+					            <!--===================================================-->
+					            <form class="form-horizontal">
+					                <div class="panel-body">
+					                    <div class="row">
+					                        <div class="col-md-4 mar-btm">
+					                            <input type="text" class="form-control" placeholder="Name">
+					                        </div>
+					                        <div class="col-md-4 mar-btm">
+					                            <input type="email" class="form-control" placeholder="Email">
+					                        </div>
+					                        <div class="col-md-4 mar-btm">
+					                            <input type="url" class="form-control" placeholder="Website">
+					                        </div>
+					                    </div>
+					                    <textarea placeholder="Message" rows="13" class="form-control"></textarea>
+					                </div>
+					                <div class="panel-footer text-right">
+					                    <button class="btn btn-default">Send message</button>
+					                </div>
+					            </form>
+					            <!--===================================================-->
+					            <!--End No Label Form-->
+					
+					        </div>
+					    </div>
+					</div>
+					<div class="row">
+					    <div class="col-md-6">
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Icons Addons</h3>
+					            </div>
+					
+					            <!--Icons Addons-->
+					            <!--===================================================-->
+					            <form class="form-horizontal">
+					                <div class="panel-body">
+					                    <div class="input-group mar-btm">
+					                        <span class="input-group-addon"><i class="demo-pli-star"></i></span>
+					                        <input type="text" class="form-control" placeholder="Name">
+					                    </div>
+					                    <div class="input-group mar-btm">
+					                        <input type="email" class="form-control" placeholder="Folder name">
+					                        <span class="input-group-addon"><i class="demo-pli-inbox-full"></i></span>
+					                    </div>
+					                    <div class="input-group mar-btm">
+					                        <span class="input-group-addon"><i class="demo-pli-wallet-2"></i></span>
+					                        <input type="text" class="form-control">
+					                        <span class="input-group-addon">.00</span>
+					                    </div>
+					                </div>
+					            </form>
+					            <!--===================================================-->
+					            <!--End Icons Addons-->
 					
 					        </div>
 					        <div class="panel">
 					            <div class="panel-heading">
-					                <h3 class="panel-title">Pagination</h3>
+					                <h3 class="panel-title">Checkboxes and radio addons</h3>
 					            </div>
 					
-					            <!-- Foo Table - Pagination -->
+					            <!--Checkboxes and Radio addons-->
 					            <!--===================================================-->
-					            <div class="panel-body">
-					                <label class="form-inline">Show
-					                    <select id="demo-show-entries" class="form-control input-sm">
-					                        <option value="5">5</option>
-					                        <option value="10">10</option>
-					                        <option value="15">15</option>
-					                        <option value="20">20</option>
-					                    </select>
-					                    entries
-					                </label>
-					                <table id="demo-foo-pagination" class="table toggle-arrow-tiny" data-page-size="5">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                    <tfoot>
-					                        <tr>
-					                            <td colspan="5">
-					                                <div class="text-right">
-					                                    <ul class="pagination"></ul>
-					                                </div>
-					                            </td>
-					                        </tr>
-					                    </tfoot>
-					                </table>
+					            <form class="form-horizontal">
+					                <div class="panel-body">
+					                    <div class="input-group mar-btm">
+					                        <div class="input-group-addon">
+					                            <input id="demo-checkbox-addons" class="magic-checkbox" type="checkbox">
+					                            <label for="demo-checkbox-addons"></label>
+					                        </div>
+					                        <input type="text" class="form-control">
+					                    </div>
+					                    <div class="input-group mar-btm">
+					                        <span class="input-group-addon">
+					                            <input id="demo-radio-addons" class="magic-radio" type="radio" name="input-group-radio" checked>
+					                            <label for="demo-radio-addons"></label>
+					                        </span>
+					                        <input type="text" class="form-control">
+					                    </div>
+					                    <div class="input-group mar-btm">
+					                        <span class="input-group-addon">
+					                            <input id="demo-radio-addons-2" class="magic-radio" type="radio" name="input-group-radio">
+					                            <label for="demo-radio-addons-2"></label>
+					                        </span>
+					                        <input type="text" class="form-control">
+					                    </div>
+					                </div>
+					            </form>
+					            <!--===================================================-->
+					            <!--End Checkboxes and Radio addons-->
+					
+					        </div>
+					    </div>
+					    <div class="col-md-6">
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Buttons Addons</h3>
 					            </div>
+					
+					            <!--Buttons Addons-->
 					            <!--===================================================-->
-					            <!-- End Foo Table - Pagination -->
+					            <form class="form-horizontal">
+					                <div class="panel-body">
+					                    <div class="input-group mar-btm">
+					                        <span class="input-group-btn">
+					                            <button class="btn btn-mint" type="button">Submit</button>
+					                        </span>
+					                        <input type="email" placeholder="Email" class="form-control">
+					                    </div>
+					                    <div class="input-group mar-btm">
+					                        <input type="text" placeholder="Search" class="form-control">
+					                        <span class="input-group-btn">
+					                            <button class="btn btn-mint" type="button">Search</button>
+					                        </span>
+					                    </div>
+					                    <div class="input-group mar-btm">
+					                        <span class="input-group-btn">
+					                            <button class="btn btn-mint" type="button"><i class="demo-pli-like"></i></button>
+					                        </span>
+					                        <input type="text" placeholder="Comment" class="form-control">
+					                        <span class="input-group-btn">
+					                            <button class="btn btn-mint" type="button"><i class="demo-pli-unlike"></i></button>
+					                        </span>
+					                    </div>
+					                </div>
+					            </form>
+					            <!--===================================================-->
+					            <!--End Buttons Addon-->
+					
+					        </div>
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Dropdowns Addons</h3>
+					            </div>
+					
+					            <!--Dropdowns Addons-->
+					            <!--===================================================-->
+					            <form class="form-horizontal">
+					                <div class="panel-body">
+					                    <div class="input-group mar-btm">
+					                        <div class="input-group-btn">
+					                            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+					                                Action <i class="dropdown-caret"></i>
+					                            </button>
+					                            <ul class="dropdown-menu">
+					                                <li><a href="#">Action</a></li>
+					                                <li><a href="#">Another action</a></li>
+					                                <li><a href="#">Something else here</a></li>
+					                                <li class="divider"></li>
+					                                <li><a href="#">Separated link</a></li>
+					                            </ul>
+					                        </div>
+					                        <input type="text" placeholder="Username" class="form-control">
+					                    </div>
+					                    <div class="input-group mar-btm">
+					                        <input type="email" placeholder="Email" class="form-control">
+					                        <div class="input-group-btn">
+					                            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+					                                Action <i class="dropdown-caret"></i>
+					                            </button>
+					                            <ul class="dropdown-menu dropdown-menu-right">
+					                                <li><a href="#">Action</a></li>
+					                                <li><a href="#">Another action</a></li>
+					                                <li><a href="#">Something else here</a></li>
+					                                <li class="divider"></li>
+					                                <li><a href="#">Separated link</a></li>
+					                            </ul>
+					                        </div>
+					                    </div>
+					                    <div class="input-group mar-btm">
+					                        <div class="input-group-btn">
+					                            <button class="btn btn-primary" type="button">Action</button>
+					                            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle dropdown-toggle-icon" type="button">
+					                                <i class="dropdown-caret"></i>
+					                            </button>
+					                            <ul class="dropdown-menu">
+					                                <li><a href="#">Action</a></li>
+					                                <li><a href="#">Another action</a></li>
+					                                <li><a href="#">Something else here</a></li>
+					                                <li class="divider"></li>
+					                                <li><a href="#">Separated link</a></li>
+					                            </ul>
+					                        </div>
+					                        <input type="text" placeholder="Comment" class="form-control">
+					                        <div class="input-group-btn">
+					                            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle dropdown-toggle-icon" type="button">
+					                                <i class="dropdown-caret"></i>
+					                            </button>
+					                            <ul class="dropdown-menu dropdown-menu-right">
+					                                <li><a href="#">Action</a></li>
+					                                <li><a href="#">Another action</a></li>
+					                                <li><a href="#">Something else here</a></li>
+					                                <li class="divider"></li>
+					                                <li><a href="#">Separated link</a></li>
+					                            </ul>
+					                        </div>
+					                    </div>
+					                </div>
+					            </form>
+					            <!--===================================================-->
+					            <!--End Dropdowns Addons-->
 					
 					        </div>
 					    </div>
 					</div>
-					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Filtering</h3>
-					    </div>
+					<div class="row">
+					    <div class="col-lg-6">
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Validation States</h3>
+					            </div>
 					
-					    <!-- Foo Table - Filtering -->
-					    <!--===================================================-->
-					    <div class="panel-body">
-					        <table id="demo-foo-filtering" class="table table-bordered table-hover toggle-circle" data-page-size="7">
-					            <thead>
-					                <tr>
-					                    <th data-toggle="true">First Name</th>
-					                    <th>Last Name</th>
-					                    <th data-hide="phone, tablet">Job Title</th>
-					                    <th data-hide="phone, tablet">DOB</th>
-					                    <th data-hide="phone, tablet">Status</th>
-					                </tr>
-					            </thead>
-					            <div class="pad-btm form-inline">
-					                <div class="row">
-					                    <div class="col-sm-6 text-xs-center">
-					                        <div class="form-group">
-					                            <label class="control-label">Status</label>
-					                            <select id="demo-foo-filter-status" class="form-control">
-					                                <option value="">Show all</option>
-					                                <option value="active">Active</option>
-					                                <option value="disabled">Disabled</option>
-					                                <option value="suspended">Suspended</option>
-					                            </select>
-					                        </div>
+					            <!--Validation States-->
+					            <!--===================================================-->
+					            <div class="panel-body">
+					                <div class="form-group">
+					                    <label for="demo-vs-definput" class="control-label">Default input</label>
+					                    <input type="text" id="demo-vs-definput" class="form-control">
+					                </div>
+					                <div class="form-group has-warning">
+					                    <label for="demo-vs-warinput" class="control-label">Input with warning</label>
+					                    <input type="text" id="demo-vs-warinput" class="form-control">
+					                </div>
+					                <div class="form-group has-error">
+					                    <label for="demo-vs-errinput" class="control-label">Input with error</label>
+					                    <input type="text" id="demo-vs-errinput" class="form-control">
+					                </div>
+					                <div class="form-group has-success">
+					                    <label for="demo-vs-scsinput" class="control-label">Input with success</label>
+					                    <input type="text" id="demo-vs-scsinput" class="form-control">
+					                </div>
+					            </div>
+					            <!--===================================================-->
+					            <!--END OF VALIDATION STATES-->
+					
+					        </div>
+					    </div>
+					    <div class="col-lg-6">
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">With optional icons</h3>
+					            </div>
+					            <div class="panel-body">
+					
+					                <!--Validation States-->
+					                <!--===================================================-->
+					                <div class="form-group has-feedback">
+					                    <label for="demo-oi-definput" class="control-label text-semibold">Default input</label>
+					                    <input type="text" id="demo-oi-definput" class="form-control">
+					                    <i class="demo-pli-male icon-lg form-control-feedback"></i>
+					                </div>
+					                <div class="form-group has-success has-feedback">
+					                    <label for="demo-oi-sccinput" class="control-label text-semibold">Input with success</label>
+					                    <input type="text" id="demo-oi-sccinput" class="form-control">
+					                    <i class="demo-pli-like icon-lg form-control-feedback"></i>
+					                </div>
+					                <div class="form-group has-warning has-feedback">
+					                    <label for="demo-oi-warinput" class="control-label text-semibold">Input with warning</label>
+					                    <input type="text" id="demo-oi-warinput" class="form-control">
+					                    <i class="demo-pli-exclamation icon-lg form-control-feedback"></i>
+					                </div>
+					                <div class="form-group has-error has-feedback">
+					                    <label for="demo-oi-errinput" class="control-label text-semibold">Input with error</label>
+					                    <input type="text" id="demo-oi-errinput" class="form-control">
+					                    <i class="demo-pli-cross icon-lg form-control-feedback"></i>
+					                </div>
+					                <!--===================================================-->
+					                <!--End Validation States-->
+					
+					            </div>
+					        </div>
+					    </div>
+					</div>
+					<div class="row">
+					    <div class="col-lg-6">
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Basic Form Elements</h3>
+					            </div>
+					
+					
+					            <!-- BASIC FORM ELEMENTS -->
+					            <!--===================================================-->
+					            <form class="panel-body form-horizontal form-padding">
+					
+					                <!--Static-->
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label">Static</label>
+					                    <div class="col-md-9"><p class="form-control-static">Username</p></div>
+					                </div>
+					
+					                <!--Text Input-->
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label" for="demo-text-input">Text Input</label>
+					                    <div class="col-md-9">
+					                        <input type="text" id="demo-text-input" class="form-control" placeholder="Text">
+					                        <small class="help-block">This is a help text</small>
 					                    </div>
-					                    <div class="col-sm-6 text-xs-center text-right">
-					                        <div class="form-group">
-					                            <input id="demo-foo-search" type="text" placeholder="Search" class="form-control" autocomplete="off">
+					                </div>
+					
+					                <!--Email Input-->
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label" for="demo-email-input">Email Input</label>
+					                    <div class="col-md-9">
+					                        <input type="email" id="demo-email-input" class="form-control" placeholder="Enter your email">
+					                        <small class="help-block">Please enter your email</small>
+					                    </div>
+					                </div>
+					
+					                <!--Password-->
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label" for="demo-password-input">Password</label>
+					                    <div class="col-md-9">
+					                        <input type="password" id="demo-password-input" class="form-control" placeholder="Password">
+					                        <small class="help-block">Please enter password</small>
+					                    </div>
+					                </div>
+					
+					                <!--Readonly Input-->
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label" for="demo-readonly-input">Readonly input</label>
+					                    <div class="col-md-9">
+					                        <input type="text" id="demo-readonly-input" class="form-control" placeholder="Readonly input here..." readonly>
+					                    </div>
+					                </div>
+					
+					                <!--Textarea-->
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label" for="demo-textarea-input">Textarea</label>
+					                    <div class="col-md-9">
+					                        <textarea id="demo-textarea-input" rows="9" class="form-control" placeholder="Your content here.."></textarea>
+					                    </div>
+					                </div>
+					
+					                <div class="form-group pad-ver">
+					                    <label class="col-md-3 control-label">Radio Buttons</label>
+					                    <div class="col-md-9">
+					
+					                        <!-- Radio Buttons -->
+					                        <div class="radio">
+					                            <input id="demo-form-radio" class="magic-radio" type="radio" name="form-radio-button" checked>
+					                            <label for="demo-form-radio">Option 1 (pre-checked)</label>
+					                        </div>
+					                        <div class="radio">
+					                            <input id="demo-form-radio-2" class="magic-radio" type="radio" name="form-radio-button">
+					                            <label for="demo-form-radio-2">Option 2</label>
+					                        </div>
+					                        <div class="radio">
+					                            <input id="demo-form-radio-3" class="magic-radio" type="radio" name="form-radio-button">
+					                            <label for="demo-form-radio-3">Option 2</label>
+					                        </div>
+					
+					                    </div>
+					                </div>
+					                <div class="form-group pad-ver">
+					                    <label class="col-md-3 control-label">Inline Radio buttons</label>
+					                    <div class="col-md-9">
+					                        <div class="radio">
+					
+					                            <!-- Inline radio buttons -->
+					                            <input id="demo-inline-form-radio" class="magic-radio" type="radio" name="inline-form-radio" checked>
+					                            <label for="demo-inline-form-radio">Option 1 (pre-checked)</label>
+					
+					                            <input id="demo-inline-form-radio-2" class="magic-radio" type="radio" name="inline-form-radio">
+					                            <label for="demo-inline-form-radio-2">Option 2</label>
+					
+					                            <input id="demo-inline-form-radio-3" class="magic-radio" type="radio" name="inline-form-radio">
+					                            <label for="demo-inline-form-radio-3">Option 3</label>
+					
+					
 					                        </div>
 					                    </div>
 					                </div>
-					            </div>
-					            <tbody>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					            </tbody>
-					            <tfoot>
-					                <tr>
-					                    <td colspan="5">
-					                        <div class="text-right">
-					                            <ul class="pagination"></ul>
-					                        </div>
-					                    </td>
-					                </tr>
-					            </tfoot>
-					        </table>
-					    </div>
-					    <!--===================================================-->
-					    <!-- End Foo Table - Filtering -->
+					                <div class="form-group pad-ver">
+					                    <label class="col-md-3 control-label">Checkboxes</label>
+					                    <div class="col-md-9">
 					
-					</div>
-					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Add &amp; Remove Rows</h3>
-					    </div>
-					
-					    <!-- Foo Table - Add & Remove Rows -->
-					    <!--===================================================-->
-					    <div class="panel-body">
-					        <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle" data-page-size="7">
-					            <thead>
-					                <tr>
-					                    <th data-sort-ignore="true" class="min-width"></th>
-					                    <th data-sort-initial="true" data-toggle="true">First Name</th>
-					                    <th>Last Name</th>
-					                    <th data-hide="phone, tablet">Job Title</th>
-					                    <th data-hide="phone, tablet">DOB</th>
-					                    <th data-hide="phone, tablet">Status</th>
-					                </tr>
-					            </thead>
-					            <div class="pad-btm form-inline">
-					                <div class="row">
-					                    <div class="col-sm-6 text-xs-center">
-					                        <div class="form-group">
-					                            <button id="demo-btn-addrow" class="btn btn-purple"><i class="demo-pli-plus"></i> Add New Row</button>
+					                        <!-- Checkboxes -->
+					                        <div class="checkbox">
+					                            <input id="demo-form-checkbox" class="magic-checkbox" type="checkbox" checked>
+					                            <label for="demo-form-checkbox">Option 1 (pre-checked)</label>
 					                        </div>
+					
+					                        <div class="checkbox">
+					                            <input id="demo-form-checkbox-2" class="magic-checkbox" type="checkbox">
+					                            <label for="demo-form-checkbox-2">Option 2</label>
+					                        </div>
+					
+					                        <div class="checkbox">
+					                            <input id="demo-form-checkbox-3" class="magic-checkbox" type="checkbox">
+					                            <label for="demo-form-checkbox-3">Option 3</label>
+					                        </div>
+					
+					
 					                    </div>
-					                    <div class="col-sm-6 text-xs-center text-right">
-					                        <div class="form-group">
-					                            <input id="demo-input-search2" type="text" placeholder="Search" class="form-control" autocomplete="off">
+					                </div>
+					                <div class="form-group pad-ver">
+					                    <label class="col-md-3 control-label">Inline Checkboxes</label>
+					                    <div class="col-md-9">
+					                        <div class="checkbox">
+					
+					                            <!-- Inline Checkboxes -->
+					                            <input id="demo-form-inline-checkbox" class="magic-checkbox" type="checkbox" checked>
+					                            <label for="demo-form-inline-checkbox">Option 1 (pre-checked)</label>
+					
+					                            <input id="demo-form-inline-checkbox-2" class="magic-checkbox" type="checkbox">
+					                            <label for="demo-form-inline-checkbox-2">Option 2</label>
+					
+					                            <input id="demo-form-inline-checkbox-3" class="magic-checkbox" type="checkbox">
+					                            <label for="demo-form-inline-checkbox-3">Option 3</label>
+					
 					                        </div>
 					                    </div>
 					                </div>
-					            </div>
-					            <tbody>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					            </tbody>
-					            <tfoot>
-					                <tr>
-					                    <td colspan="6">
-					                        <div class="text-right">
-					                            <ul class="pagination"></ul>
-					                        </div>
-					                    </td>
-					                </tr>
-					            </tfoot>
-					        </table>
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label">File input</label>
+					                    <div class="col-md-9">
+					                        <span class="pull-left btn btn-primary btn-file">
+					                        Browse... <input type="file">
+					                        </span>
+					                    </div>
+					                </div>
+					            </form>
+					            <!--===================================================-->
+					            <!-- END BASIC FORM ELEMENTS -->
+					
+					
+					        </div>
 					    </div>
-					    <!--===================================================-->
-					    <!-- End Foo Table - Add & Remove Rows -->
+					    <div class="col-lg-6">
+					        <div class="panel">
+					            <div class="panel-heading">
+					                <h3 class="panel-title">Disabled</h3>
+					            </div>
 					
+					
+					            <!-- DISABLED FORM ELEMENTS-->
+					            <!--===================================================-->
+					            <form class="panel-body form-horizontal form-padding">
+					
+					                <!--Static-->
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label">Static</label>
+					                    <div class="col-md-9">
+					                        <p class="form-control-static">Username</p>
+					                    </div>
+					                </div>
+					
+					                <!--Disabled Text Input-->
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label">Text Input</label>
+					                    <div class="col-md-9">
+					                        <input type="text" class="form-control" placeholder="Text" disabled>
+					                        <small class="help-block">This is a help text</small>
+					                    </div>
+					                </div>
+					
+					                <!--Disabled Email Input-->
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label">Email Input</label>
+					                    <div class="col-md-9">
+					                        <input type="email" class="form-control" placeholder="Enter your email" disabled>
+					                        <small class="help-block">Please enter your email</small>
+					                    </div>
+					                </div>
+					
+					                <!--Disabled Password-->
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label">Password</label>
+					                    <div class="col-md-9">
+					                        <input type="password" class="form-control" placeholder="Password" disabled>
+					                        <small class="help-block">Please enter password</small>
+					                    </div>
+					                </div>
+					
+					                <!--Readonly Input-->
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label">Readonly input</label>
+					                    <div class="col-md-9">
+					                        <input type="text" class="form-control" placeholder="Readonly input here..." readonly disabled>
+					                    </div>
+					                </div>
+					
+					
+					                <!--Disabled Textarea-->
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label">Textarea</label>
+					                    <div class="col-md-9">
+					                        <textarea rows="9" class="form-control" placeholder="Your content here.." disabled></textarea>
+					                    </div>
+					                </div>
+					
+					                <div class="form-group pad-ver">
+					                    <label class="col-md-3 control-label">Radio Buttons</label>
+					                    <div class="col-md-9">
+					
+					                            <!--Disabled Radio Buttons -->
+					                        <div class="radio">
+					                            <input id="demo-disabled-form-radio" class="magic-radio" type="radio" name="disabled-form-radio-button" checked disabled>
+					                            <label for="demo-disabled-form-radio">Option 1 (pre-checked)</label>
+					                        </div>
+					                        <div class="radio">
+					                            <input id="demo-disabled-form-radio-2" class="magic-radio" type="radio" name="disabled-form-radio-button" disabled>
+					                            <label for="demo-disabled-form-radio-2">Option 2</label>
+					                        </div>
+					                        <div class="radio">
+					                            <input id="demo-disabled-form-radio-3" class="magic-radio" type="radio" name="disabled-form-radio-button" disabled>
+					                            <label for="demo-disabled-form-radio-3">Option 2</label>
+					                        </div>
+					
+					
+					                    </div>
+					                </div>
+					                <div class="form-group pad-ver">
+					                    <label class="col-md-3 control-label">Inline Radio Buttons</label>
+					                    <div class="col-md-9">
+					                        <div class="radio">
+					
+					                            <!-- Inline radio buttons -->
+					                            <input id="demo-disabled-inline-form-radio" class="magic-radio" type="radio" name="disabled-inline-form-radio" checked disabled>
+					                            <label for="demo-disabled-inline-form-radio">Option 1 (pre-checked)</label>
+					
+					                            <input id="demo-disabled-inline-form-radio-2" class="magic-radio" type="radio" name="disabled-inline-form-radio" disabled>
+					                            <label for="demo-disabled-inline-form-radio-2">Option 2</label>
+					
+					                            <input id="demo-disabled-inline-form-radio-3" class="magic-radio" type="radio" name="disabled-inline-form-radio" disabled>
+					                            <label for="demo-disabled-inline-form-radio-3">Option 3</label>
+					
+					
+					                        </div>
+					                    </div>
+					                </div>
+					                <div class="form-group pad-ver">
+					                    <label class="col-md-3 control-label">Checkboxes</label>
+					                    <div class="col-md-9">
+					
+					                        <div class="checkbox">
+					                            <input id="demo-disabled-form-checkbox" class="magic-checkbox" type="checkbox" checked disabled>
+					                            <label for="demo-disabled-form-checkbox">Option 1 (pre-checked)</label>
+					                        </div>
+					
+					                        <div class="checkbox">
+					                            <input id="demo-disabled-form-checkbox-2" class="magic-checkbox" type="checkbox" disabled>
+					                            <label for="demo-disabled-form-checkbox-2">Option 2</label>
+					                        </div>
+					
+					                        <div class="checkbox">
+					                            <input id="demo-disabled-form-checkbox-3" class="magic-checkbox" type="checkbox" disabled>
+					                            <label for="demo-disabled-form-checkbox-3">Option 3</label>
+					                        </div>
+					
+					                    </div>
+					                </div>
+					                <div class="form-group pad-ver">
+					                    <label class="col-md-3 control-label">Inline Checkboxes</label>
+					                    <div class="col-md-9">
+					                        <div class="checkbox">
+					
+					                            <!-- Inline Checkboxes -->
+					                            <input id="demo-disabled-form-inline-checkbox" class="magic-checkbox" type="checkbox" checked disabled>
+					                            <label for="demo-disabled-form-inline-checkbox">Option 1 (pre-checked)</label>
+					
+					                            <input id="demo-disabled-form-inline-checkbox-2" class="magic-checkbox" type="checkbox" disabled>
+					                            <label for="demo-disabled-form-inline-checkbox-2">Option 2</label>
+					
+					                            <input id="demo-disabled-form-inline-checkbox-3" class="magic-checkbox" type="checkbox" disabled>
+					                            <label for="demo-disabled-form-inline-checkbox-3">Option 3</label>
+					
+					                        </div>
+					                    </div>
+					                </div>
+					                <div class="form-group">
+					                    <label class="col-md-3 control-label">File input</label>
+					                    <div class="col-md-9">
+					                        <span class="pull-left btn btn-primary btn-file disabled">
+					                            Browse... <input type="file" disabled>
+					                        </span>
+					                    </div>
+					                </div>
+					            </form>
+					            <!--===================================================-->
+					            <!-- END DISABLED FORM ELEMENTS -->
+					
+					        </div>
+					    </div>
 					</div>
-					
 					
 					
                 </div>
@@ -1859,7 +1769,7 @@
 						
 						            <!--Menu list item-->
 						            <li>
-						                <a href="NOT for Upload refrence-pages\widgets.html">
+						                <a href="widgets.html">
 						                    <i class="demo-psi-gear-2"></i>
 						                    <span class="menu-title">
 												<strong>Widgets</strong>
@@ -1883,9 +1793,9 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages\ui-buttons.html">Buttons</a></li>
+						                    <li><a href="ui-buttons.html">Buttons</a></li>
 											<li><a href="ui-panels.html">Panels</a></li>
-											<li><a href="NOT for Upload refrence-pages\ui-modals.html">Modals</a></li>
+											<li><a href="ui-modals.html">Modals</a></li>
 											<li><a href="ui-progress-bars.html">Progress bars</a></li>
 											<li><a href="ui-components.html">Components</a></li>
 											<li><a href="ui-typography.html">Typography</a></li>
@@ -1897,7 +1807,7 @@
 						            </li>
 						
 						            <!--Menu list item-->
-						            <li>
+						            <li class="active-sub">
 						                <a href="#">
 						                    <i class="demo-psi-pen-5"></i>
 						                    <span class="menu-title">Forms</span>
@@ -1905,20 +1815,20 @@
 						                </a>
 						
 						                <!--Submenu-->
-						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages\forms-general.html">General</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-components.html">Advanced Components</a></li>
+						                <ul class="collapse in">
+						                    <li class="active-link"><a href="forms-general.html">General</a></li>
+											<li><a href="forms-components.html">Advanced Components</a></li>
 											<li><a href="forms-validation.html">Validation</a></li>
 											<li><a href="forms-wizard.html">Wizard</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-file-upload.html">File Upload</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-text-editor.html">Text Editor</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-markdown.html">Markdown</a></li>
+											<li><a href="forms-file-upload.html">File Upload</a></li>
+											<li><a href="forms-text-editor.html">Text Editor</a></li>
+											<li><a href="forms-markdown.html">Markdown</a></li>
 											
 						                </ul>
 						            </li>
 						
 						            <!--Menu list item-->
-						            <li class="active-sub">
+						            <li>
 						                <a href="#">
 						                    <i class="demo-psi-receipt-4"></i>
 						                    <span class="menu-title">Tables</span>
@@ -1926,18 +1836,18 @@
 						                </a>
 						
 						                <!--Submenu-->
-						                <ul class="collapse in">
+						                <ul class="collapse">
 						                    <li><a href="tables-static.html">Static Tables</a></li>
 											<li><a href="tables-bootstrap.html">Bootstrap Tables</a></li>
 											<li><a href="tables-datatable.html">Data Tables</a></li>
-											<li class="active-link"><a href="tables-footable.html">Foo Tables</a></li>
+											<li><a href="tables-footable.html">Foo Tables</a></li>
 											
 						                </ul>
 						            </li>
 						
 						            <!--Menu list item-->
 						            <li>
-						                <a href="NOT for Upload refrence-pages\charts.html">
+						                <a href="charts.html">
 						                    <i class="demo-psi-bar-chart"></i>
 						                    <span class="menu-title">Charts</span>
 						                </a>
@@ -1993,18 +1903,18 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages/pages-blank.html">Blank Page</a></li>
-											<li><a href="profile-page.html">Profile</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-search-results.html">Search Results</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-faq.html">FAQ</a></li>
+						                    <li><a href="pages-blank.html">Blank Page</a></li>
+											<li><a href="pages-profile.html">Profile</a></li>
+											<li><a href="pages-search-results.html">Search Results</a></li>
+											<li><a href="pages-faq.html">FAQ</a></li>
 											<li class="list-divider"></li>
-											<li><a href="NOT for Upload refrence-pages/pages-404.html">404 Error</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-500.html">500 Error</a></li>
+											<li><a href="pages-404.html">404 Error</a></li>
+											<li><a href="pages-500.html">500 Error</a></li>
 											<li class="list-divider"></li>
-											<li><a href="NOT for Upload refrence-pages/pages-login.html">Login</a></li>
-											<li><a href="user-register.html">Register</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-password-reminder.html">Password Reminder</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-lock-screen.html">Lock Screen</a></li>
+											<li><a href="pages-login.html">Login</a></li>
+											<li><a href="pages-register.html">Register</a></li>
+											<li><a href="pages-password-reminder.html">Password Reminder</a></li>
+											<li><a href="pages-lock-screen.html">Lock Screen</a></li>
 											
 						                </ul>
 						            </li>
@@ -2640,4 +2550,3 @@
 
 </body>
 </html>
-

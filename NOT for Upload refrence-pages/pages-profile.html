@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foo Tables | Nifty - Admin Template</title>
+    <title>Profile | Nifty - Admin Template</title>
 
 
     <!--STYLESHEET-->
@@ -31,10 +31,6 @@
 
 
         
-    <!--FooTable [ OPTIONAL ]-->
-    <link href="plugins/fooTable/css/footable.core.css" rel="stylesheet">
-
-
 
 
 
@@ -69,14 +65,6 @@
     <script src="js/demo/nifty-demo.min.js"></script>
 
     
-    <!--FooTable [ OPTIONAL ]-->
-    <script src="plugins/fooTable/dist/footable.all.min.js"></script>
-
-
-    <!--FooTable Example [ SAMPLE ]-->
-    <script src="js/demo/tables-footable.js"></script>
-
-
 
 
     
@@ -524,7 +512,7 @@
 
                                 <!-- Dropdown footer -->
                                 <div class="pad-all text-right">
-                                    <a href="NOT for Upload refrence-pages/pages-login.html" class="btn btn-primary">
+                                    <a href="pages-login.html" class="btn btn-primary">
                                         <i class="demo-pli-unlock"></i> Logout
                                     </a>
                                 </div>
@@ -554,901 +542,335 @@
             <!--===================================================-->
             <div id="content-container">
                 
-                <!--Page Title-->
-                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <div id="page-title">
-                    <h1 class="page-header text-overflow">Foo Tables</h1>
-
-                    <!--Searchbox-->
-                    <div class="searchbox">
-                        <div class="input-group custom-search-form">
-                            <input type="text" class="form-control" placeholder="Search..">
-                            <span class="input-group-btn">
-                                <button class="text-muted" type="button"><i class="demo-pli-magnifi-glass"></i></button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <!--End page title-->
 
                 <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
                     
-					
-					<div class="row">
-					    <div class="col-sm-6">
+					<div class="fixed-fluid">
+					    <div class="fixed-sm-200 fixed-lg-250 pull-sm-left">
 					        <div class="panel">
-					            <div class="panel-heading">
-					                <h3 class="panel-title">Row Toggler</h3>
+					            <!-- Simple profile -->
+					            <div class="text-center pad-all bord-btm">
+					                <div class="pad-ver">
+					                    <img src="img/profile-photos/1.png" class="img-lg img-border img-circle" alt="Profile Picture">
+					                </div>
+					                <h4 class="text-lg text-overflow mar-no">Aaron Chavez</h4>
+					                <p class="text-sm text-muted">Digital Marketing Director</p>
+					
+					                <div class="pad-ver btn-groups">
+					                    <a href="#" class="btn btn-hover-primary demo-pli-facebook icon-lg add-tooltip" data-original-title="Facebook" data-container="body"></a>
+					                    <a href="#" class="btn btn-hover-info demo-pli-twitter icon-lg add-tooltip" data-original-title="Twitter" data-container="body"></a>
+					                    <a href="#" class="btn btn-hover-danger demo-pli-google-plus icon-lg add-tooltip" data-original-title="Google+" data-container="body"></a>
+					                    <a href="#" class="btn btn-hover-purple demo-pli-instagram icon-lg add-tooltip" data-original-title="Instagram" data-container="body"></a>
+					                </div>
+					                <button class="btn btn-block btn-success">Follow</button>
+					            </div>
+					            <p class="text-semibold text-main pad-all mar-no">About Me</p>
+					            <ul class="list-group bg-trans text-sm">
+					
+					                <!-- Profile Details -->
+					                <li class="list-group-item list-item-sm">
+					                    <i class="demo-pli-map-marker-2 icon-lg icon-fw"></i> San Jose, CA
+					                </li>
+					                <li class="list-group-item list-item-sm text-primary text-semibold">
+					                    <a href="#" class="btn-link text-semibold">
+					                        <i class="demo-pli-internet icon-lg icon-fw"></i> http://www.themeon.net
+					                    </a>
+					                </li>
+					            </ul>
+					            <div class="pad-hor mar-btm">
+					                <small class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</small>
 					            </div>
 					
-					            <!-- Foo Table - Row Toggler -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <table id="demo-foo-row-toggler" class="table toggle-circle">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Row Toggler -->
-					
-					        </div>
-					        <div class="panel">
-					            <div class="panel-heading">
-					                <h3 class="panel-title">Accordion</h3>
-					            </div>
-					
-					            <!-- Foo Table - Accordion -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <table id="demo-foo-accordion" class="table toggle-arrow-tiny">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Accordion -->
-					
+					            <p class="text-semibold text-main pad-all mar-no">Skills</p>
+					            <ul class="list-inline mar-hor">
+					                <li class="tag tag-sm">PHP Programming</li>
+					                <li class="tag tag-sm">Marketing</li>
+					                <li class="tag tag-sm">Graphic Design</li>
+					                <li class="tag tag-sm">Sketch</li>
+					                <li class="tag tag-sm">Photography</li>
+					            </ul>
 					        </div>
 					    </div>
-					    <div class="col-sm-6">
-					        <div class="panel">
-					            <div class="panel-heading">
-					                <h3 class="panel-title">Expand / Collapse All Rows</h3>
-					            </div>
-					
-					            <!-- Foo Table - Expand / Collapse All Rows -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <div class="pad-btm">
-					                    <button id="demo-foo-collapse" class="btn btn-info">Collapse All</button>
-					                    <button id="demo-foo-expand" class="btn btn-warning">Expand All</button>
+					    <div class="fluid">
+					        <div class="bg-trans-light pad-all mar-btm clearfix">
+					            <hr class="new-section-xs bord-no">
+					            <div class="col-md-7">
+					                <div class="row text-center mar-btm">
+					                    <div class="col-xs-3">
+					                        <p class="h4 mar-no">52K</p>
+					                        <small class="text-muted">Followers</small>
+					                    </div>
+					                    <div class="col-xs-3">
+					                        <p class="h4 mar-no">72K</p>
+					                        <small class="text-muted">Following</small>
+					                    </div>
+					                    <div class="col-xs-3">
+					                        <p class="h4 mar-no">5,343</p>
+					                        <small class="text-muted">Photo</small>
+					                    </div>
+					                    <div class="col-xs-3">
+					                        <p class="h4 mar-no"><i class="demo-psi-star icon-fw text-warning"></i>4.5</p>
+					                        <small class="text-muted">Ranking</small>
+					                    </div>
 					                </div>
-					                <table id="demo-foo-col-exp" class="table toggle-circle">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                    </tbody>
-					                </table>
 					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Expand / Collapse All Rows -->
-					
+					            <div class="col-md-5 text-right mar-btm">
+					                <button class="btn btn-sm btn-primary">Send Message</button>
+					                <button class="btn btn-sm btn-success">Download CV</button>
+					            </div>
 					        </div>
-					        <div class="panel">
-					            <div class="panel-heading">
-					                <h3 class="panel-title">Pagination</h3>
-					            </div>
 					
-					            <!-- Foo Table - Pagination -->
-					            <!--===================================================-->
-					            <div class="panel-body">
-					                <label class="form-inline">Show
-					                    <select id="demo-show-entries" class="form-control input-sm">
-					                        <option value="5">5</option>
-					                        <option value="10">10</option>
-					                        <option value="15">15</option>
-					                        <option value="20">20</option>
-					                    </select>
-					                    entries
-					                </label>
-					                <table id="demo-foo-pagination" class="table toggle-arrow-tiny" data-page-size="5">
-					                    <thead>
-					                        <tr>
-					                            <th data-toggle="true">First Name</th>
-					                            <th>Last Name</th>
-					                            <th data-hide="all">Job Title</th>
-					                            <th data-hide="all">DOB</th>
-					                            <th data-hide="all">Status</th>
-					                        </tr>
-					                    </thead>
-					                    <tbody>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Isidra</td>
-					                            <td>Boudreaux</td>
-					                            <td>Traffic Court Referee</td>
-					                            <td>22 Jun 1972</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Shona</td>
-					                            <td>Woldt</td>
-					                            <td>Airline Transport Pilot</td>
-					                            <td>3 Oct 1981</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Granville</td>
-					                            <td>Leonardo</td>
-					                            <td>Business Services Sales Representative</td>
-					                            <td>19 Apr 1969</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Easer</td>
-					                            <td>Dragoo</td>
-					                            <td>Drywall Stripper</td>
-					                            <td>13 Dec 1977</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maple</td>
-					                            <td>Halladay</td>
-					                            <td>Aviation Tactical Readiness Officer</td>
-					                            <td>30 Dec 1991</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Maxine</td>
-					                            <td><a href="#">Woldt</a></td>
-					                            <td><a href="#">Business Services Sales Representative</a></td>
-					                            <td>17 Oct 1987</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lorraine</td>
-					                            <td>Mcgaughy</td>
-					                            <td>Hemodialysis Technician</td>
-					                            <td>11 Nov 1983</td>
-					                            <td><span class="label label-table label-dark">Disabled</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lizzee</td>
-					                            <td><a href="#">Goodlow</a></td>
-					                            <td>Technical Services Librarian</td>
-					                            <td>1 Nov 1961</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Judi</td>
-					                            <td>Badgett</td>
-					                            <td>Electrical Lineworker</td>
-					                            <td>23 Jun 1981</td>
-					                            <td><span class="label label-table label-success">Active</span></td>
-					                        </tr>
-					                        <tr>
-					                            <td>Lauri</td>
-					                            <td>Hyland</td>
-					                            <td>Blackjack Supervisor</td>
-					                            <td>15 Nov 1985</td>
-					                            <td><span class="label label-table label-danger">Suspended</span></td>
-					                        </tr>
-					                    </tbody>
-					                    <tfoot>
-					                        <tr>
-					                            <td colspan="5">
-					                                <div class="text-right">
-					                                    <ul class="pagination"></ul>
+					        <div class="fixed-fluid">
+					            <div class="fixed-lg-300 pull-lg-right">
+					                <div class="panel">
+					                    <div class="panel-heading">
+					                        <h3 class="panel-title"><i class="demo-pli-file-jpg icon-fw"></i> Gallery</h3>
+					                    </div>
+					                    <div class="panel-body">
+					                        <ul class="list-unstyled list-inline text-justify">
+					                            <li class="pad-btm">
+					                                <img src="img//thumbs/mega-menu-2.jpg" alt="thumbs">
+					                            </li>
+					                            <li class="pad-btm">
+					                                <img src="img//thumbs/mega-menu-3.jpg" alt="thumbs">
+					                            </li>
+					                            <li class="pad-btm">
+					                                <img src="img//thumbs/mega-menu-1.jpg" alt="thumbs">
+					                            </li>
+					                            <li class="pad-btm">
+					                                <img src="img//thumbs/mega-menu-4.jpg" alt="thumbs">
+					                            </li>
+					                            <li class="pad-btm">
+					                                <img src="img//thumbs/mega-menu-5.jpg" alt="thumbs">
+					                            </li>
+					                            <li class="pad-btm">
+					                                <img src="img//thumbs/mega-menu-6.jpg" alt="thumbs">
+					                            </li>
+					                            <li class="pad-btm">
+					                                <img src="img//thumbs/mega-menu-3.jpg" alt="thumbs">
+					                            </li>
+					                            <li class="pad-btm">
+					                                <img src="img//thumbs/mega-menu-4.jpg" alt="thumbs">
+					                            </li>
+					                            <li class="pad-btm">
+					                                <img src="img//thumbs/mega-menu-6.jpg" alt="thumbs">
+					                            </li>
+					                            <li>
+					                                <img src="img//thumbs/mega-menu-1.jpg" alt="thumbs">
+					                            </li>
+					                            <li>
+					                                <img src="img//thumbs/mega-menu-2.jpg" alt="thumbs">
+					                            </li>
+					                            <li>
+					                                <img src="img//thumbs/mega-menu-5.jpg" alt="thumbs">
+					                            </li>
+					                        </ul>
+					                        <a href="#" class="btn btn-sm btn-block btn-default">Browse Gallery</a>
+					                    </div>
+					                </div>
+					
+					                <div class="panel">
+					                    <div class="panel-heading">
+					                        <h3 class="panel-title">People also viewed</h3>
+					                    </div>
+					                    <div class="list-group bg-trans">
+					                        <a href="#" class="list-group-item">
+					                            <div class="media-left pos-rel">
+					                                <img class="img-circle img-xs" src="img/profile-photos/2.png" alt="Profile Picture">
+					                                <i class="badge badge-success badge-stat badge-icon pull-left"></i>
+					                            </div>
+					                            <div class="media-body">
+					                                <p class="mar-no">Stephen Tran</p>
+					                                <small class="text-muted">Designer &amp; Illustrator</small>
+					                            </div>
+					                        </a>
+					                        <a href="#" class="list-group-item">
+					                            <div class="media-left pos-rel">
+					                                <img class="img-circle img-xs" src="img/profile-photos/7.png" alt="Profile Picture">
+					                            </div>
+					                            <div class="media-body">
+					                                <p class="mar-no">Brittany Meyer</p>
+					                                <small class="text-muted">Freelance Graphic Designer</small>
+					                            </div>
+					                        </a>
+					                        <a href="#" class="list-group-item">
+					                            <div class="media-left pos-rel">
+					                                <img class="img-circle img-xs" src="img/profile-photos/1.png" alt="Profile Picture">
+					                                <i class="badge badge-info badge-stat badge-icon pull-left"></i>
+					                            </div>
+					                            <div class="media-body">
+					                                <p class="mar-no">Jack George</p>
+					                                <small class="text-muted">CEO at Smart Techno</small>
+					                            </div>
+					                        </a>
+					                        <a href="#" class="list-group-item">
+					                            <div class="media-left pos-rel">
+					                                <img class="img-circle img-xs" src="img/profile-photos/4.png" alt="Profile Picture">
+					                            </div>
+					                            <div class="media-body">
+					                                <p class="mar-no">Donald Brown</p>
+					                                <small class="text-muted">Marketing</small>
+					                            </div>
+					                        </a>
+					                        <a href="#" class="list-group-item">
+					                            <div class="media-left pos-rel">
+					                                <img class="img-circle img-xs" src="img/profile-photos/8.png" alt="Profile Picture">
+					                                <i class="badge badge-warning badge-stat badge-icon pull-left"></i>
+					                            </div>
+					                            <div class="media-body">
+					                                <p class="mar-no">Betty Murphy</p>
+					                                <small class="text-muted">PHP Programmer</small>
+					                            </div>
+					                        </a>
+					                    </div>
+					                </div>
+					            </div>
+					            <div class="fluid">
+					                <!-- Status Form -->
+					                <!--===================================================-->
+					                <div class="panel">
+					                    <div class="panel-body">
+					                        <textarea class="form-control" rows="2" placeholder="What are you thinking?"></textarea>
+					                        <div class="mar-top clearfix">
+					                            <button class="btn btn-sm btn-primary pull-right" type="submit"><i class="demo-psi-right-4 icon-fw"></i> Share</button>
+					                            <a class="btn btn-trans btn-icon demo-pli-video icon-lg add-tooltip" href="#" data-original-title="Add Video" data-toggle="tooltip"></a>
+					                            <a class="btn btn-trans btn-icon demo-pli-camera-2 icon-lg add-tooltip" href="#" data-original-title="Add Photo" data-toggle="tooltip"></a>
+					                            <a class="btn btn-trans btn-icon demo-pli-file icon-lg add-tooltip" href="#" data-original-title="Add File" data-toggle="tooltip"></a>
+					                        </div>
+					                    </div>
+					                </div>
+					                <!--===================================================-->
+					                <!-- End Status Form -->
+					
+					                <div class="panel">
+					                    <div class="panel-body">
+					
+					                        <!-- Newsfeed Content -->
+					                        <!--===================================================-->
+					                        <div class="media-block">
+					                            <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="img/profile-photos/10.png"></a>
+					                            <div class="media-body">
+					                                <div class="pad-btm">
+					                                    <a href="#" class="btn-link text-semibold media-heading box-inline">Lisa D</a> added new photo to <span class="text-semibold">General photos</span>
+					                                    <p class="text-muted text-sm"><i class="demo-pli-smartphone-3 icon-lg"></i> - From Mobile - 11 min ago</p>
 					                                </div>
-					                            </td>
-					                        </tr>
-					                    </tfoot>
-					                </table>
-					            </div>
-					            <!--===================================================-->
-					            <!-- End Foo Table - Pagination -->
+					                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+					                                <img class="img-responsive" src="img/shared-img.jpg" alt="Image">
 					
+					                                <div class="media">
+					                                    <div class="media-right">
+					                                        <ul class="list-inline">
+					                                            <li>
+					                                                <i class="demo-pli-speech-bubble-3 icon-lg "></i>
+					                                                <span class="text-semibold">107</span>
+					                                            </li>
+					                                            <li>
+					                                                <i class="demo-pli-heart-2 icon-lg"></i>
+					                                                <span class="text-semibold">95</span>
+					                                            </li>
+					                                        </ul>
+					                                    </div>
+					                                    <div class="media-body">
+					                                        <ul class="list-inline mar-no">
+					                                          <li><a href="#"><img class="img-xs img-circle" src="img/profile-photos/9.png" alt="Profile Picture"></a></li>
+					                                          <li><a href="#"><img class="img-xs img-circle" src="img/profile-photos/3.png" alt="Profile Picture"></a></li>
+					                                          <li><a href="#"><img class="img-xs img-circle" src="img/profile-photos/1.png" alt="Profile Picture"></a></li>
+					                                          <li><a href="#" class="text-bold text-sm">14+</a></li>
+					                                        </ul>
+					                                    </div>
+					                                </div>
+					
+					                                <!-- Comments -->
+					                                <div class="mar-top pad-top bord-top">
+					                                    <div class="media pad-btm">
+					                                        <a class="media-left" href="#"><img class="img-circle img-xs" alt="Profile Picture" src="img/profile-photos/5.png"></a>
+					                                        <div class="media-body">
+					                                            <div>
+					                                                <a href="#" class="btn-link text-semibold media-heading box-inline">Bobby Marz</a>
+					                                                <small class="text-muted pad-lft">7 min ago</small>
+					                                            </div>
+					                                            Sed diam nonummy nibh euismod.
+					                                        </div>
+					                                    </div>
+					
+					                                    <div class="media pad-btm">
+					                                        <a class="media-left" href="#"><img class="img-circle img-xs" alt="Profile Picture" src="img/profile-photos/7.png"></a>
+					                                        <div class="media-body">
+					                                            <div>
+					                                                <a href="#" class="btn-link text-semibold media-heading box-inline">Lucy Moon</a>
+					                                                <small class="text-muted pad-lft">2 Hours ago</small>
+					                                            </div>
+					                                            Duis autem vel eum iriure dolor in vulputate ?
+					                                        </div>
+					                                    </div>
+					
+					                                    <div class="media pad-btm">
+					                                        <a class="media-left" href="#"><img class="img-circle img-xs" alt="Profile Picture" src="img/profile-photos/4.png"></a>
+					                                        <div class="media-body">
+					                                            <div>
+					                                                <a href="#" class="btn-link text-semibold media-heading box-inline">Jacky Lore</a>
+					                                                <small class="text-muted pad-lft">1 Days ago</small>
+					                                            </div>
+					                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+					                                        </div>
+					                                    </div>
+					                                    <button class="btn btn-trans"><span class="text-semibold">36</span> Load More</button>
+					                                </div>
+					                            </div>
+					                        </div>
+					                        <!--===================================================-->
+					                        <!-- End Newsfeed Content -->
+					
+					                    </div>
+					                </div>
+					                <div class="panel">
+					                    <div class="panel-body">
+					
+					                        <!-- Newsfeed Content -->
+					                        <!--===================================================-->
+					                        <div class="media-block">
+					                            <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="img/profile-photos/1.png"></a>
+					                            <div class="media-body">
+					                                <div class="pad-btm">
+					                                    <a href="#" class="btn-link text-semibold media-heading box-inline">John Doe</a>  Share a status of <a href="#" class="btn-link text-semibold media-heading box-inline">Lucy Doe</a>
+					                                    <p class="text-muted text-sm"><i class="demo-pli-smartphone-3 icon-lg"></i> - From Mobile - 11 min ago</p>
+					                                </div>
+					                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt </p>
+					                                <div class="media">
+					                                    <div class="media-right">
+					                                        <ul class="list-inline">
+					                                            <li>
+					                                                <i class="demo-pli-speech-bubble-3 icon-lg "></i>
+					                                                <span class="text-semibold">27</span>
+					                                            </li>
+					                                            <li>
+					                                                <i class="demo-pli-heart-2 icon-lg"></i>
+					                                                <span class="text-semibold">45</span>
+					                                            </li>
+					                                        </ul>
+					                                    </div>
+					                                    <div class="media-body">
+					                                        <ul class="list-inline mar-no">
+					                                          <li><a href="#"><img class="img-xs img-circle" src="img/profile-photos/2.png" alt="Profile Picture"></a></li>
+					                                          <li><a href="#"><img class="img-xs img-circle" src="img/profile-photos/5.png" alt="Profile Picture"></a></li>
+					                                          <li><a href="#"><img class="img-xs img-circle" src="img/profile-photos/8.png" alt="Profile Picture"></a></li>
+					                                          <li><a href="#" class="text-bold text-sm">5+</a></li>
+					                                        </ul>
+					                                    </div>
+					                                </div>
+					                            </div>
+					                        </div>
+					                        <!--===================================================-->
+					                        <!-- End Newsfeed Content -->
+					
+					                    </div>
+					                </div>
+					            </div>
 					        </div>
 					    </div>
 					</div>
-					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Filtering</h3>
-					    </div>
-					
-					    <!-- Foo Table - Filtering -->
-					    <!--===================================================-->
-					    <div class="panel-body">
-					        <table id="demo-foo-filtering" class="table table-bordered table-hover toggle-circle" data-page-size="7">
-					            <thead>
-					                <tr>
-					                    <th data-toggle="true">First Name</th>
-					                    <th>Last Name</th>
-					                    <th data-hide="phone, tablet">Job Title</th>
-					                    <th data-hide="phone, tablet">DOB</th>
-					                    <th data-hide="phone, tablet">Status</th>
-					                </tr>
-					            </thead>
-					            <div class="pad-btm form-inline">
-					                <div class="row">
-					                    <div class="col-sm-6 text-xs-center">
-					                        <div class="form-group">
-					                            <label class="control-label">Status</label>
-					                            <select id="demo-foo-filter-status" class="form-control">
-					                                <option value="">Show all</option>
-					                                <option value="active">Active</option>
-					                                <option value="disabled">Disabled</option>
-					                                <option value="suspended">Suspended</option>
-					                            </select>
-					                        </div>
-					                    </div>
-					                    <div class="col-sm-6 text-xs-center text-right">
-					                        <div class="form-group">
-					                            <input id="demo-foo-search" type="text" placeholder="Search" class="form-control" autocomplete="off">
-					                        </div>
-					                    </div>
-					                </div>
-					            </div>
-					            <tbody>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					            </tbody>
-					            <tfoot>
-					                <tr>
-					                    <td colspan="5">
-					                        <div class="text-right">
-					                            <ul class="pagination"></ul>
-					                        </div>
-					                    </td>
-					                </tr>
-					            </tfoot>
-					        </table>
-					    </div>
-					    <!--===================================================-->
-					    <!-- End Foo Table - Filtering -->
-					
-					</div>
-					<div class="panel">
-					    <div class="panel-heading">
-					        <h3 class="panel-title">Add &amp; Remove Rows</h3>
-					    </div>
-					
-					    <!-- Foo Table - Add & Remove Rows -->
-					    <!--===================================================-->
-					    <div class="panel-body">
-					        <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle" data-page-size="7">
-					            <thead>
-					                <tr>
-					                    <th data-sort-ignore="true" class="min-width"></th>
-					                    <th data-sort-initial="true" data-toggle="true">First Name</th>
-					                    <th>Last Name</th>
-					                    <th data-hide="phone, tablet">Job Title</th>
-					                    <th data-hide="phone, tablet">DOB</th>
-					                    <th data-hide="phone, tablet">Status</th>
-					                </tr>
-					            </thead>
-					            <div class="pad-btm form-inline">
-					                <div class="row">
-					                    <div class="col-sm-6 text-xs-center">
-					                        <div class="form-group">
-					                            <button id="demo-btn-addrow" class="btn btn-purple"><i class="demo-pli-plus"></i> Add New Row</button>
-					                        </div>
-					                    </div>
-					                    <div class="col-sm-6 text-xs-center text-right">
-					                        <div class="form-group">
-					                            <input id="demo-input-search2" type="text" placeholder="Search" class="form-control" autocomplete="off">
-					                        </div>
-					                    </div>
-					                </div>
-					            </div>
-					            <tbody>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Isidra</td>
-					                    <td>Boudreaux</td>
-					                    <td>Traffic Court Referee</td>
-					                    <td>22 Jun 1972</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Shona</td>
-					                    <td>Woldt</td>
-					                    <td>Airline Transport Pilot</td>
-					                    <td>3 Oct 1981</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Granville</td>
-					                    <td>Leonardo</td>
-					                    <td>Business Services Sales Representative</td>
-					                    <td>19 Apr 1969</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Easer</td>
-					                    <td>Dragoo</td>
-					                    <td>Drywall Stripper</td>
-					                    <td>13 Dec 1977</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Maple</td>
-					                    <td>Halladay</td>
-					                    <td>Aviation Tactical Readiness Officer</td>
-					                    <td>30 Dec 1991</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Maxine</td>
-					                    <td><a href="#">Woldt</a></td>
-					                    <td><a href="#">Business Services Sales Representative</a></td>
-					                    <td>17 Oct 1987</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lorraine</td>
-					                    <td>Mcgaughy</td>
-					                    <td>Hemodialysis Technician</td>
-					                    <td>11 Nov 1983</td>
-					                    <td><span class="label label-table label-dark">Disabled</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lizzee</td>
-					                    <td><a href="#">Goodlow</a></td>
-					                    <td>Technical Services Librarian</td>
-					                    <td>1 Nov 1961</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Judi</td>
-					                    <td>Badgett</td>
-					                    <td>Electrical Lineworker</td>
-					                    <td>23 Jun 1981</td>
-					                    <td><span class="label label-table label-success">Active</span></td>
-					                </tr>
-					                <tr>
-					                    <td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button></td>
-					                    <td>Lauri</td>
-					                    <td>Hyland</td>
-					                    <td>Blackjack Supervisor</td>
-					                    <td>15 Nov 1985</td>
-					                    <td><span class="label label-table label-danger">Suspended</span></td>
-					                </tr>
-					            </tbody>
-					            <tfoot>
-					                <tr>
-					                    <td colspan="6">
-					                        <div class="text-right">
-					                            <ul class="pagination"></ul>
-					                        </div>
-					                    </td>
-					                </tr>
-					            </tfoot>
-					        </table>
-					    </div>
-					    <!--===================================================-->
-					    <!-- End Foo Table - Add & Remove Rows -->
-					
-					</div>
-					
-					
 					
                 </div>
                 <!--===================================================-->
@@ -1859,7 +1281,7 @@
 						
 						            <!--Menu list item-->
 						            <li>
-						                <a href="NOT for Upload refrence-pages\widgets.html">
+						                <a href="widgets.html">
 						                    <i class="demo-psi-gear-2"></i>
 						                    <span class="menu-title">
 												<strong>Widgets</strong>
@@ -1883,9 +1305,9 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages\ui-buttons.html">Buttons</a></li>
+						                    <li><a href="ui-buttons.html">Buttons</a></li>
 											<li><a href="ui-panels.html">Panels</a></li>
-											<li><a href="NOT for Upload refrence-pages\ui-modals.html">Modals</a></li>
+											<li><a href="ui-modals.html">Modals</a></li>
 											<li><a href="ui-progress-bars.html">Progress bars</a></li>
 											<li><a href="ui-components.html">Components</a></li>
 											<li><a href="ui-typography.html">Typography</a></li>
@@ -1906,19 +1328,19 @@
 						
 						                <!--Submenu-->
 						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages\forms-general.html">General</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-components.html">Advanced Components</a></li>
+						                    <li><a href="forms-general.html">General</a></li>
+											<li><a href="forms-components.html">Advanced Components</a></li>
 											<li><a href="forms-validation.html">Validation</a></li>
 											<li><a href="forms-wizard.html">Wizard</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-file-upload.html">File Upload</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-text-editor.html">Text Editor</a></li>
-											<li><a href="NOT for Upload refrence-pages\forms-markdown.html">Markdown</a></li>
+											<li><a href="forms-file-upload.html">File Upload</a></li>
+											<li><a href="forms-text-editor.html">Text Editor</a></li>
+											<li><a href="forms-markdown.html">Markdown</a></li>
 											
 						                </ul>
 						            </li>
 						
 						            <!--Menu list item-->
-						            <li class="active-sub">
+						            <li>
 						                <a href="#">
 						                    <i class="demo-psi-receipt-4"></i>
 						                    <span class="menu-title">Tables</span>
@@ -1926,18 +1348,18 @@
 						                </a>
 						
 						                <!--Submenu-->
-						                <ul class="collapse in">
+						                <ul class="collapse">
 						                    <li><a href="tables-static.html">Static Tables</a></li>
 											<li><a href="tables-bootstrap.html">Bootstrap Tables</a></li>
 											<li><a href="tables-datatable.html">Data Tables</a></li>
-											<li class="active-link"><a href="tables-footable.html">Foo Tables</a></li>
+											<li><a href="tables-footable.html">Foo Tables</a></li>
 											
 						                </ul>
 						            </li>
 						
 						            <!--Menu list item-->
 						            <li>
-						                <a href="NOT for Upload refrence-pages\charts.html">
+						                <a href="charts.html">
 						                    <i class="demo-psi-bar-chart"></i>
 						                    <span class="menu-title">Charts</span>
 						                </a>
@@ -1984,7 +1406,7 @@
 						            </li>
 						
 						            <!--Menu list item-->
-						            <li>
+						            <li class="active-sub">
 						                <a href="#">
 						                    <i class="demo-psi-file-html"></i>
 						                    <span class="menu-title">Pages</span>
@@ -1992,19 +1414,19 @@
 						                </a>
 						
 						                <!--Submenu-->
-						                <ul class="collapse">
-						                    <li><a href="NOT for Upload refrence-pages/pages-blank.html">Blank Page</a></li>
-											<li><a href="profile-page.html">Profile</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-search-results.html">Search Results</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-faq.html">FAQ</a></li>
+						                <ul class="collapse in">
+						                    <li><a href="pages-blank.html">Blank Page</a></li>
+											<li class="active-link"><a href="pages-profile.html">Profile</a></li>
+											<li><a href="pages-search-results.html">Search Results</a></li>
+											<li><a href="pages-faq.html">FAQ</a></li>
 											<li class="list-divider"></li>
-											<li><a href="NOT for Upload refrence-pages/pages-404.html">404 Error</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-500.html">500 Error</a></li>
+											<li><a href="pages-404.html">404 Error</a></li>
+											<li><a href="pages-500.html">500 Error</a></li>
 											<li class="list-divider"></li>
-											<li><a href="NOT for Upload refrence-pages/pages-login.html">Login</a></li>
-											<li><a href="user-register.html">Register</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-password-reminder.html">Password Reminder</a></li>
-											<li><a href="NOT for Upload refrence-pages/pages-lock-screen.html">Lock Screen</a></li>
+											<li><a href="pages-login.html">Login</a></li>
+											<li><a href="pages-register.html">Register</a></li>
+											<li><a href="pages-password-reminder.html">Password Reminder</a></li>
+											<li><a href="pages-lock-screen.html">Lock Screen</a></li>
 											
 						                </ul>
 						            </li>
