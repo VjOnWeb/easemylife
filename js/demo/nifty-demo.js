@@ -330,7 +330,16 @@ $(document).ready(function () {
                     collapsedCheckbox.checked = false;
                 }
             }
-
+        // Select the mainnav-toggle element
+        var mainnavToggle = document.querySelector('.mainnav-toggle');
+        
+        // Add click event listener to the mainnav-toggle element
+        mainnavToggle.addEventListener('click', function() {
+            // Toggle the classes mainnav-lg and mainnav-sm on the container element
+            var container = document.getElementById('container');
+            container.classList.toggle('mainnav-lg');
+            container.classList.toggle('mainnav-sm');
+        });
 
 
 

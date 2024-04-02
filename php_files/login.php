@@ -15,10 +15,15 @@ if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
     if ($password == $row['password']) {
         // Password is correct, set session and redirect to dashboard
+        // Set session cookie parameters
+        session_set_cookie_params(1200); // 1200 seconds = 20 minutes
+
         session_start();
         $_SESSION['user_id'] = $row['id'];
         $_SESSION['username'] = $row['username'];
         $_SESSION['user_type'] = $row['user_type'];
+        $_SESSION['name'] = $row['name'];
+        $_SESSION['email'] = $row['email'];
         header("Location: dashboard.php");
         exit();
     } else {

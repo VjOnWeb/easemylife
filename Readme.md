@@ -27,9 +27,7 @@ List of Features available in Demo Mode
 20. Icons Pack
 21. PREMIUM ICONSBEST
 22. Helper Classes
-23. Server Status
-24. 15%
-25. CPU Usage
+23. Widgets
 
 
 

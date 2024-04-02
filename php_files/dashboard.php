@@ -3,7 +3,7 @@ session_start();
 
 // Check if user is logged in, if not redirect to login page
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.html");
+    header("Location: /easemylife/index.html");
     exit();
 }
 
